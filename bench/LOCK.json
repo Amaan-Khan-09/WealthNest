@@ -1,0 +1,46 @@
+{
+ "locked_at_utc": "2026-11-24T13:00:31+00:00",
+ "fixtures": {
+  "dev": {
+   "n": 56,
+   "truth_sha256": "3e8be2126f1ad50282985ee9a83d805e2b46ac67ffbe4d69035349fb4a3d8162"
+  },
+  "holdout": {
+   "n": 100,
+   "truth_sha256": "69b37544ea918791a8fd94501481d16c478d401a70caaeb7042206884089404a"
+  }
+ },
+ "code_sha256": "2d781ea896f1e722489463ed084db9c4975d6b1b07d8ae82cb71f766e65adba3",
+ "code_files": {
+  "models.py": "8c8b3ee910aec232cdc1247027979ffa5507d564d7b88c052fbb88a0ca7e7131",
+  "money.py": "514ef64553bba3b89cb2d40172c0dee58bcf9d6fb92318fd6362f0589c492956",
+  "extract.py": "ab026dfaa62120f3f3d7d1d21116df15f94351a832d5057dd454712bfb3b8cef",
+  "recover.py": "e7b26911f9c4f278f8edb0f0c22400b29b91e4549e13032923d512a4ec73eb16",
+  "validate.py": "cef2e817ad3c5c44137850524c2f1164c2929d3ca76879cdd8480bfa166df352",
+  "pipeline.py": "03abd2a82edc3b7b7b5f495fe7b13419244a011fdcc289afd28d17f2305eece9"
+ },
+ "post_lock_changes": [
+  {
+   "files": [
+    "statement_guard/baseline.py (new)",
+    "statement_guard/pipeline.py"
+   ],
+   "reason": "Baseline replaced after the holdout run showed the first-draft baseline ('naive', kept as arm 0) assigned narration words to numeric columns: a design flaw, not a fair 'straightforward' parser. Baseline v1 was written without running it on the holdout first.",
+   "affects": "baseline and validated arms; full arm unaffected"
+  },
+  {
+   "files": [
+    "statement_guard/extract.py"
+   ],
+   "reason": "Two bugs in the robust extractor found by diagnosing locked-holdout failures: (1) indicator-column window 4pt too tight when header is centred and values left-aligned (layout F); (2) header-free fallback counted only dated lines as rows (layout G with blank dates). Added behind fixes=True; fixes=False is the locked behaviour.",
+   "affects": "arm 3b only; arm 3 (locked) runs with fixes=False"
+  },
+  {
+   "files": [
+    "statement_guard/baseline.py"
+   ],
+   "reason": "Baseline v1.1: v1 treated any lone 'D'/'C' word anywhere in the row as the Dr/Cr marker (a narration such as 'JOSEPH D SOUZA' flipped a credit to a debit). Found by debugging on DEV fixtures; now the marker is only read inside the indicator column. Baseline v1 had been run once on holdout (concurrently with this fix); the holdout baseline arms were re-run with v1.1.",
+   "affects": "baseline and validated arms only"
+  }
+ ]
+}

@@ -1,0 +1,626 @@
+{
+ "layout": "G",
+ "category": "watermark",
+ "seed": 7000,
+ "split": "holdout",
+ "opening": "81420.72",
+ "closing": "294795.09",
+ "has_balance": false,
+ "printed_rows": [
+  {
+   "date": "2026-01-21",
+   "description": "IMPS/P2A/829470113613/GURPREET SINGH",
+   "ref": "143780302202",
+   "debit": "14456.62",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-01-21",
+   "description": "ATM WDL/PUNE/652506",
+   "ref": "166084",
+   "debit": "2000",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-01-22",
+   "description": "UPI/DR/084472157162/FRESHMART/okpay/UPI PAYMENT REF",
+   "ref": "385354283708",
+   "debit": "1576.11",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-01-25",
+   "description": "ATM WDL/PUNE/910312",
+   "ref": "642264",
+   "debit": "2000",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-01-27",
+   "description": "UPI/DR/242512641531/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "406660836452",
+   "debit": "3772.00",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-01-29",
+   "description": "IMPS/P2A/672171371877/S VENKATESH",
+   "ref": "084986063096",
+   "debit": null,
+   "credit": "11615.63",
+   "balance": null
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/DR/998929699863/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "845064715923",
+   "debit": "758.79",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-01",
+   "description": "POS 9223XXXXXX0060 STREAMBOX",
+   "ref": "62120128",
+   "debit": "4026.69",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/DR/195118591947/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "709510412100",
+   "debit": "388.09",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/CR/201934594141/PRIYA NAIR/okpay/UPI",
+   "ref": "438502888292",
+   "debit": null,
+   "credit": "14676.92",
+   "balance": null
+  },
+  {
+   "date": "2026-02-01",
+   "description": "NEFT-N210360362-NORTHSTAR INSURANCE-SALARY",
+   "ref": "6821385948",
+   "debit": null,
+   "credit": "184517.25",
+   "balance": null
+  },
+  {
+   "date": "2026-02-04",
+   "description": "IMPS/P2A/651890268288/K LAKSHMI DEVI",
+   "ref": "852028232931",
+   "debit": "22558.79",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-05",
+   "description": "UPI/DR/955316406910/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "742739262431",
+   "debit": "3333.15",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-07",
+   "description": "UPI/DR/172589558545/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "683517073657",
+   "debit": "3109.02",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-10",
+   "description": "UPI/CR/055913893383/RAHUL SHARMA/okpay/UPI",
+   "ref": "347376654235",
+   "debit": null,
+   "credit": "10302.09",
+   "balance": null
+  },
+  {
+   "date": "2026-02-10",
+   "description": "ATM WDL/PUNE/255754",
+   "ref": "867484",
+   "debit": "20000",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-11",
+   "description": "NEFT-N230322012-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "5068703250",
+   "debit": null,
+   "credit": "245332.17",
+   "balance": null
+  },
+  {
+   "date": "2026-02-11",
+   "description": "UPI/DR/814698327625/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "424305652353",
+   "debit": "4619.20",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-14",
+   "description": "UPI/DR/644977576611/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "281956592811",
+   "debit": "3214.61",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-14",
+   "description": "UPI/DR/355049977846/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "040283562009",
+   "debit": "2335.16",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-14",
+   "description": "ACH D- ORCHARD HOUSING SOCIETY-58874642",
+   "ref": "05072863",
+   "debit": "26128.01",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-15",
+   "description": "INT.PD 21-65-2026 QTR CREDIT",
+   "ref": "314656",
+   "debit": null,
+   "credit": "868.97",
+   "balance": null
+  },
+  {
+   "date": "2026-02-16",
+   "description": "IMPS/P2A/796344129925/PRIYA NAIR",
+   "ref": "788249500774",
+   "debit": "16843.73",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-16",
+   "description": "IMPS/P2A/059761575758/JOSEPH D SOUZA",
+   "ref": "037153735709",
+   "debit": null,
+   "credit": "11814.24",
+   "balance": null
+  },
+  {
+   "date": "2026-02-16",
+   "description": "POS 4132XXXXXX8761 METRORAIL CARD",
+   "ref": "07921862",
+   "debit": "12895.54",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-17",
+   "description": "UPI/DR/632739117491/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "350957046375",
+   "debit": "2542.04",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-20",
+   "description": "IMPS/P2A/110906540914/K LAKSHMI DEVI",
+   "ref": "223987477535",
+   "debit": "4033.11",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-22",
+   "description": "NEFT-N087659668-ACME PAYROLL SERVICES-RENT/EMI SETTLEMENT",
+   "ref": "5589712138",
+   "debit": "50444.76",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-24",
+   "description": "ATM WDL/KOCHI/442716",
+   "ref": "435865",
+   "debit": "2000",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-27",
+   "description": "UPI/CR/396869553301/K LAKSHMI DEVI/okpay/UPI",
+   "ref": "138972602165",
+   "debit": null,
+   "credit": "6831.95",
+   "balance": null
+  },
+  {
+   "date": "2026-02-28",
+   "description": "POS 7770XXXXXX7611 METRORAIL CARD",
+   "ref": "64821567",
+   "debit": "13077.85",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-28",
+   "description": "IMPS/P2A/651560429928/RAHUL SHARMA",
+   "ref": "273685071973",
+   "debit": null,
+   "credit": "18642.91",
+   "balance": null
+  },
+  {
+   "date": "2026-02-28",
+   "description": "ATM WDL/DELHI/769128",
+   "ref": "693438",
+   "debit": "20000",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-28",
+   "description": "NEFT-N611009316-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "9147125341",
+   "debit": "8493.76",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-28",
+   "description": "POS 0927XXXXXX0545 BOOKNEST",
+   "ref": "73746231",
+   "debit": "12093.67",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-03-03",
+   "description": "ACH D- NORTHSTAR INSURANCE-49537360",
+   "ref": "59425115",
+   "debit": "16018.60",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-03-03",
+   "description": "IMPS/P2A/569842983307/RAHUL SHARMA",
+   "ref": "526176822236",
+   "debit": "1289.51",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-03-03",
+   "description": "IMPS/P2A/589952495180/PRIYA NAIR",
+   "ref": "117752827811",
+   "debit": "17218.95",
+   "credit": null,
+   "balance": null
+  }
+ ],
+ "original_rows": [
+  {
+   "date": "2026-01-21",
+   "description": "IMPS/P2A/829470113613/GURPREET SINGH",
+   "ref": "143780302202",
+   "debit": "14456.62",
+   "credit": null,
+   "balance": "66964.10"
+  },
+  {
+   "date": "2026-01-21",
+   "description": "ATM WDL/PUNE/652506",
+   "ref": "166084",
+   "debit": "2000",
+   "credit": null,
+   "balance": "64964.10"
+  },
+  {
+   "date": "2026-01-22",
+   "description": "UPI/DR/084472157162/FRESHMART/okpay/UPI PAYMENT REF",
+   "ref": "385354283708",
+   "debit": "1576.11",
+   "credit": null,
+   "balance": "63387.99"
+  },
+  {
+   "date": "2026-01-25",
+   "description": "ATM WDL/PUNE/910312",
+   "ref": "642264",
+   "debit": "2000",
+   "credit": null,
+   "balance": "61387.99"
+  },
+  {
+   "date": "2026-01-27",
+   "description": "UPI/DR/242512641531/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "406660836452",
+   "debit": "3772.00",
+   "credit": null,
+   "balance": "57615.99"
+  },
+  {
+   "date": "2026-01-29",
+   "description": "IMPS/P2A/672171371877/S VENKATESH",
+   "ref": "084986063096",
+   "debit": null,
+   "credit": "11615.63",
+   "balance": "69231.62"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/DR/998929699863/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "845064715923",
+   "debit": "758.79",
+   "credit": null,
+   "balance": "68472.83"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "POS 9223XXXXXX0060 STREAMBOX",
+   "ref": "62120128",
+   "debit": "4026.69",
+   "credit": null,
+   "balance": "64446.14"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/DR/195118591947/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "709510412100",
+   "debit": "388.09",
+   "credit": null,
+   "balance": "64058.05"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/CR/201934594141/PRIYA NAIR/okpay/UPI",
+   "ref": "438502888292",
+   "debit": null,
+   "credit": "14676.92",
+   "balance": "78734.97"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "NEFT-N210360362-NORTHSTAR INSURANCE-SALARY",
+   "ref": "6821385948",
+   "debit": null,
+   "credit": "184517.25",
+   "balance": "263252.22"
+  },
+  {
+   "date": "2026-02-04",
+   "description": "IMPS/P2A/651890268288/K LAKSHMI DEVI",
+   "ref": "852028232931",
+   "debit": "22558.79",
+   "credit": null,
+   "balance": "240693.43"
+  },
+  {
+   "date": "2026-02-05",
+   "description": "UPI/DR/955316406910/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "742739262431",
+   "debit": "3333.15",
+   "credit": null,
+   "balance": "237360.28"
+  },
+  {
+   "date": "2026-02-07",
+   "description": "UPI/DR/172589558545/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "683517073657",
+   "debit": "3109.02",
+   "credit": null,
+   "balance": "234251.26"
+  },
+  {
+   "date": "2026-02-10",
+   "description": "UPI/CR/055913893383/RAHUL SHARMA/okpay/UPI",
+   "ref": "347376654235",
+   "debit": null,
+   "credit": "10302.09",
+   "balance": "244553.35"
+  },
+  {
+   "date": "2026-02-10",
+   "description": "ATM WDL/PUNE/255754",
+   "ref": "867484",
+   "debit": "20000",
+   "credit": null,
+   "balance": "224553.35"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "NEFT-N230322012-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "5068703250",
+   "debit": null,
+   "credit": "245332.17",
+   "balance": "469885.52"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "UPI/DR/814698327625/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "424305652353",
+   "debit": "4619.20",
+   "credit": null,
+   "balance": "465266.32"
+  },
+  {
+   "date": "2026-02-14",
+   "description": "UPI/DR/644977576611/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "281956592811",
+   "debit": "3214.61",
+   "credit": null,
+   "balance": "462051.71"
+  },
+  {
+   "date": "2026-02-14",
+   "description": "UPI/DR/355049977846/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "040283562009",
+   "debit": "2335.16",
+   "credit": null,
+   "balance": "459716.55"
+  },
+  {
+   "date": "2026-02-14",
+   "description": "ACH D- ORCHARD HOUSING SOCIETY-58874642",
+   "ref": "05072863",
+   "debit": "26128.01",
+   "credit": null,
+   "balance": "433588.54"
+  },
+  {
+   "date": "2026-02-15",
+   "description": "INT.PD 21-65-2026 QTR CREDIT",
+   "ref": "314656",
+   "debit": null,
+   "credit": "868.97",
+   "balance": "434457.51"
+  },
+  {
+   "date": "2026-02-16",
+   "description": "IMPS/P2A/796344129925/PRIYA NAIR",
+   "ref": "788249500774",
+   "debit": "16843.73",
+   "credit": null,
+   "balance": "417613.78"
+  },
+  {
+   "date": "2026-02-16",
+   "description": "IMPS/P2A/059761575758/JOSEPH D SOUZA",
+   "ref": "037153735709",
+   "debit": null,
+   "credit": "11814.24",
+   "balance": "429428.02"
+  },
+  {
+   "date": "2026-02-16",
+   "description": "POS 4132XXXXXX8761 METRORAIL CARD",
+   "ref": "07921862",
+   "debit": "12895.54",
+   "credit": null,
+   "balance": "416532.48"
+  },
+  {
+   "date": "2026-02-17",
+   "description": "UPI/DR/632739117491/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "350957046375",
+   "debit": "2542.04",
+   "credit": null,
+   "balance": "413990.44"
+  },
+  {
+   "date": "2026-02-20",
+   "description": "IMPS/P2A/110906540914/K LAKSHMI DEVI",
+   "ref": "223987477535",
+   "debit": "4033.11",
+   "credit": null,
+   "balance": "409957.33"
+  },
+  {
+   "date": "2026-02-22",
+   "description": "NEFT-N087659668-ACME PAYROLL SERVICES-RENT/EMI SETTLEMENT",
+   "ref": "5589712138",
+   "debit": "50444.76",
+   "credit": null,
+   "balance": "359512.57"
+  },
+  {
+   "date": "2026-02-24",
+   "description": "ATM WDL/KOCHI/442716",
+   "ref": "435865",
+   "debit": "2000",
+   "credit": null,
+   "balance": "357512.57"
+  },
+  {
+   "date": "2026-02-27",
+   "description": "UPI/CR/396869553301/K LAKSHMI DEVI/okpay/UPI",
+   "ref": "138972602165",
+   "debit": null,
+   "credit": "6831.95",
+   "balance": "364344.52"
+  },
+  {
+   "date": "2026-02-28",
+   "description": "POS 7770XXXXXX7611 METRORAIL CARD",
+   "ref": "64821567",
+   "debit": "13077.85",
+   "credit": null,
+   "balance": "351266.67"
+  },
+  {
+   "date": "2026-02-28",
+   "description": "IMPS/P2A/651560429928/RAHUL SHARMA",
+   "ref": "273685071973",
+   "debit": null,
+   "credit": "18642.91",
+   "balance": "369909.58"
+  },
+  {
+   "date": "2026-02-28",
+   "description": "ATM WDL/DELHI/769128",
+   "ref": "693438",
+   "debit": "20000",
+   "credit": null,
+   "balance": "349909.58"
+  },
+  {
+   "date": "2026-02-28",
+   "description": "NEFT-N611009316-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "9147125341",
+   "debit": "8493.76",
+   "credit": null,
+   "balance": "341415.82"
+  },
+  {
+   "date": "2026-02-28",
+   "description": "POS 0927XXXXXX0545 BOOKNEST",
+   "ref": "73746231",
+   "debit": "12093.67",
+   "credit": null,
+   "balance": "329322.15"
+  },
+  {
+   "date": "2026-03-03",
+   "description": "ACH D- NORTHSTAR INSURANCE-49537360",
+   "ref": "59425115",
+   "debit": "16018.60",
+   "credit": null,
+   "balance": "313303.55"
+  },
+  {
+   "date": "2026-03-03",
+   "description": "IMPS/P2A/569842983307/RAHUL SHARMA",
+   "ref": "526176822236",
+   "debit": "1289.51",
+   "credit": null,
+   "balance": "312014.04"
+  },
+  {
+   "date": "2026-03-03",
+   "description": "IMPS/P2A/589952495180/PRIYA NAIR",
+   "ref": "117752827811",
+   "debit": "17218.95",
+   "credit": null,
+   "balance": "294795.09"
+  }
+ ],
+ "source_defect": null,
+ "image_only": false,
+ "expected_review": false,
+ "summary_style": "table_box",
+ "summary_printed": true
+}

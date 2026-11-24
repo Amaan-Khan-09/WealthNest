@@ -1,0 +1,989 @@
+{
+ "layout": "F",
+ "category": "src_dup_row",
+ "seed": 6013,
+ "split": "holdout",
+ "opening": "859701.81",
+ "closing": "2041682.45",
+ "has_balance": true,
+ "printed_rows": [
+  {
+   "date": "2025-12-31",
+   "description": "ATM WDL/HYDERABAD/405310",
+   "ref": "512232",
+   "debit": "2000",
+   "credit": null,
+   "balance": "857701.81"
+  },
+  {
+   "date": "2026-01-02",
+   "description": "UPI/DR/328576155043/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "482178824282",
+   "debit": "3405.00",
+   "credit": null,
+   "balance": "854296.81"
+  },
+  {
+   "date": "2026-01-02",
+   "description": "NEFT-N380716782-NORTHSTAR INSURANCE-SALARY",
+   "ref": "6806803697",
+   "debit": null,
+   "credit": "135842.20",
+   "balance": "990139.01"
+  },
+  {
+   "date": "2026-01-03",
+   "description": "UPI/DR/344432726429/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "985066397593",
+   "debit": "3520.26",
+   "credit": null,
+   "balance": "986618.75"
+  },
+  {
+   "date": "2026-01-06",
+   "description": "POS 4034XXXXXX4738 STREAMBOX",
+   "ref": "54230989",
+   "debit": "8445.38",
+   "credit": null,
+   "balance": "978173.37"
+  },
+  {
+   "date": "2026-01-07",
+   "description": "INT.PD 70-18-2026 QTR CREDIT",
+   "ref": "866743",
+   "debit": null,
+   "credit": "745.42",
+   "balance": "978918.79"
+  },
+  {
+   "date": "2026-01-09",
+   "description": "ATM WDL/KOCHI/710489",
+   "ref": "734860",
+   "debit": "20000",
+   "credit": null,
+   "balance": "958918.79"
+  },
+  {
+   "date": "2026-01-09",
+   "description": "UPI/DR/934408918603/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "232871275578",
+   "debit": "98.33",
+   "credit": null,
+   "balance": "958820.46"
+  },
+  {
+   "date": "2026-01-12",
+   "description": "UPI/DR/941284478380/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "682251176136",
+   "debit": "2145.12",
+   "credit": null,
+   "balance": "956675.34"
+  },
+  {
+   "date": "2026-01-13",
+   "description": "POS 5058XXXXXX9953 STREAMBOX",
+   "ref": "87458199",
+   "debit": "5487.79",
+   "credit": null,
+   "balance": "951187.55"
+  },
+  {
+   "date": "2026-01-14",
+   "description": "NEFT-N433661560-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "0215124375",
+   "debit": null,
+   "credit": "25923.95",
+   "balance": "977111.50"
+  },
+  {
+   "date": "2026-01-14",
+   "description": "UPI/CR/369146756597/JOSEPH D SOUZA/okpay/UPI",
+   "ref": "405058043156",
+   "debit": null,
+   "credit": "14372.46",
+   "balance": "991483.96"
+  },
+  {
+   "date": "2026-01-16",
+   "description": "NEFT-N387328306-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "6219228142",
+   "debit": "13807.22",
+   "credit": null,
+   "balance": "977676.74"
+  },
+  {
+   "date": "2026-01-19",
+   "description": "IMPS/P2A/534757727613/JOSEPH D SOUZA",
+   "ref": "877984942753",
+   "debit": "1056.82",
+   "credit": null,
+   "balance": "976619.92"
+  },
+  {
+   "date": "2026-01-19",
+   "description": "UPI/CR/224626342303/S VENKATESH/okpay/UPI",
+   "ref": "663616741891",
+   "debit": null,
+   "credit": "19036.73",
+   "balance": "995656.65"
+  },
+  {
+   "date": "2026-01-20",
+   "description": "UPI/CR/917690137786/AMINA KHATUN/okpay/UPI",
+   "ref": "778007022658",
+   "debit": null,
+   "credit": "8061.75",
+   "balance": "1003718.40"
+  },
+  {
+   "date": "2026-01-20",
+   "description": "UPI/DR/164561659635/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "438303070509",
+   "debit": "330.69",
+   "credit": null,
+   "balance": "1003387.71"
+  },
+  {
+   "date": "2026-01-20",
+   "description": "UPI/DR/955902539363/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "364124457026",
+   "debit": "4905.86",
+   "credit": null,
+   "balance": "998481.85"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "POS 1229XXXXXX3558 GREENLEAF PHARMACY",
+   "ref": "18838047",
+   "debit": "1452.82",
+   "credit": null,
+   "balance": "997029.03"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "NEFT-N215262119-ACME PAYROLL SERVICES-SALARY",
+   "ref": "1171922932",
+   "debit": null,
+   "credit": "92864.05",
+   "balance": "1089893.08"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "NEFT-N463313432-ORCHARD HOUSING SOCIETY-SALARY",
+   "ref": "8865727246",
+   "debit": null,
+   "credit": "211348.65",
+   "balance": "1301241.73"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "NEFT-N228123945-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "6270161351",
+   "debit": "32769.44",
+   "credit": null,
+   "balance": "1268472.29"
+  },
+  {
+   "date": "2026-01-24",
+   "description": "NEFT-N135006959-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "9630866169",
+   "debit": "43986.33",
+   "credit": null,
+   "balance": "1224485.96"
+  },
+  {
+   "date": "2026-01-24",
+   "description": "POS 6531XXXXXX1920 BOOKNEST",
+   "ref": "96066588",
+   "debit": "9019.73",
+   "credit": null,
+   "balance": "1215466.23"
+  },
+  {
+   "date": "2026-01-26",
+   "description": "UPI/CR/614908341649/PRIYA NAIR/okpay/UPI",
+   "ref": "111360896980",
+   "debit": null,
+   "credit": "24091.92",
+   "balance": "1239558.15"
+  },
+  {
+   "date": "2026-01-27",
+   "description": "UPI/CR/493481304823/PRIYA NAIR/okpay/UPI",
+   "ref": "593169023104",
+   "debit": null,
+   "credit": "16593.80",
+   "balance": "1256151.95"
+  },
+  {
+   "date": "2026-01-27",
+   "description": "POS 8050XXXXXX6345 STREAMBOX",
+   "ref": "50200936",
+   "debit": "11135.04",
+   "credit": null,
+   "balance": "1245016.91"
+  },
+  {
+   "date": "2026-01-28",
+   "description": "UPI/CR/546326073891/AMINA KHATUN/okpay/UPI",
+   "ref": "279318771925",
+   "debit": null,
+   "credit": "16882.29",
+   "balance": "1261899.20"
+  },
+  {
+   "date": "2026-01-28",
+   "description": "UPI/DR/327431260097/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "978717030087",
+   "debit": "4907.98",
+   "credit": null,
+   "balance": "1256991.22"
+  },
+  {
+   "date": "2026-01-29",
+   "description": "UPI/DR/795351346038/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "240950219128",
+   "debit": "5272.30",
+   "credit": null,
+   "balance": "1251718.92"
+  },
+  {
+   "date": "2026-01-29",
+   "description": "UPI/CR/499421217195/S VENKATESH/okpay/UPI",
+   "ref": "378090644426",
+   "debit": null,
+   "credit": "21257.51",
+   "balance": "1272976.43"
+  },
+  {
+   "date": "2026-01-30",
+   "description": "ACH D- ACME PAYROLL SERVICES-00024096",
+   "ref": "72654229",
+   "debit": "16244.78",
+   "credit": null,
+   "balance": "1256731.65"
+  },
+  {
+   "date": "2026-01-30",
+   "description": "UPI/DR/185926378845/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "928367831137",
+   "debit": "1019.34",
+   "credit": null,
+   "balance": "1255712.31"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "ATM WDL/DELHI/681033",
+   "ref": "736960",
+   "debit": "10000",
+   "credit": null,
+   "balance": "1245712.31"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "INT.PD 15-63-2026 QTR CREDIT",
+   "ref": "620671",
+   "debit": null,
+   "credit": "505.52",
+   "balance": "1246217.83"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/CR/570463407833/AMINA KHATUN/okpay/UPI",
+   "ref": "594154291442",
+   "debit": null,
+   "credit": "25571.03",
+   "balance": "1271788.86"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "UPI/DR/016987480436/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "248641091106",
+   "debit": "5180.00",
+   "credit": null,
+   "balance": "1266608.86"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "NEFT-N698423830-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "8988930865",
+   "debit": null,
+   "credit": "163437.16",
+   "balance": "1430046.02"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "NEFT-N643420038-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "5657929820",
+   "debit": null,
+   "credit": "172301.71",
+   "balance": "1602347.73"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "ATM WDL/DELHI/002527",
+   "ref": "529077",
+   "debit": "2000",
+   "credit": null,
+   "balance": "1600347.73"
+  },
+  {
+   "date": "2026-02-04",
+   "description": "NEFT-N767308599-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "5359407681",
+   "debit": "44663.81",
+   "credit": null,
+   "balance": "1555683.92"
+  },
+  {
+   "date": "2026-02-04",
+   "description": "NEFT-N296305662-ACME PAYROLL SERVICES-SALARY",
+   "ref": "2071118737",
+   "debit": null,
+   "credit": "165754.29",
+   "balance": "1721438.21"
+  },
+  {
+   "date": "2026-02-06",
+   "description": "NEFT-N512916637-NORTHSTAR INSURANCE-SALARY",
+   "ref": "5952056127",
+   "debit": null,
+   "credit": "124095.33",
+   "balance": "1845533.54"
+  },
+  {
+   "date": "2026-02-09",
+   "description": "UPI/DR/653623881327/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "535030289595",
+   "debit": "4860.48",
+   "credit": null,
+   "balance": "1840673.06"
+  },
+  {
+   "date": "2026-02-10",
+   "description": "NEFT-N779611859-NORTHSTAR INSURANCE-SALARY",
+   "ref": "7453630403",
+   "debit": null,
+   "credit": "85386.87",
+   "balance": "1926059.93"
+  },
+  {
+   "date": "2026-02-10",
+   "description": "NEFT-N779611859-NORTHSTAR INSURANCE-SALARY",
+   "ref": "7453630403",
+   "debit": null,
+   "credit": "85386.87",
+   "balance": "1926059.93"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "UPI/CR/358065544968/AMINA KHATUN/okpay/UPI",
+   "ref": "997652852056",
+   "debit": null,
+   "credit": "14349.06",
+   "balance": "1940408.99"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "UPI/DR/208261715407/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "055613346301",
+   "debit": "4677.44",
+   "credit": null,
+   "balance": "1935731.55"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "NEFT-N469513958-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "7316122058",
+   "debit": "12919.35",
+   "credit": null,
+   "balance": "1922812.20"
+  },
+  {
+   "date": "2026-02-13",
+   "description": "UPI/DR/741555989494/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "316957363807",
+   "debit": "2758.60",
+   "credit": null,
+   "balance": "1920053.60"
+  },
+  {
+   "date": "2026-02-13",
+   "description": "UPI/DR/307858999951/TECHHUB ELECTRONICS/okpay/UPI PAYMENT REF",
+   "ref": "231291207667",
+   "debit": "2941.92",
+   "credit": null,
+   "balance": "1917111.68"
+  },
+  {
+   "date": "2026-02-16",
+   "description": "UPI/DR/202213982698/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "338380433402",
+   "debit": "5502.36",
+   "credit": null,
+   "balance": "1911609.32"
+  },
+  {
+   "date": "2026-02-19",
+   "description": "NEFT-N660928810-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "9380801676",
+   "debit": "25874.32",
+   "credit": null,
+   "balance": "1885735.00"
+  },
+  {
+   "date": "2026-02-20",
+   "description": "IMPS/P2A/909198126624/RAHUL SHARMA",
+   "ref": "452478521738",
+   "debit": "2027.00",
+   "credit": null,
+   "balance": "1883708.00"
+  },
+  {
+   "date": "2026-02-21",
+   "description": "IMPS/P2A/905422235119/JOSEPH D SOUZA",
+   "ref": "161567056478",
+   "debit": null,
+   "credit": "763.69",
+   "balance": "1884471.69"
+  },
+  {
+   "date": "2026-02-24",
+   "description": "UPI/DR/099682407211/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "470046109873",
+   "debit": "242.36",
+   "credit": null,
+   "balance": "1884229.33"
+  },
+  {
+   "date": "2026-02-26",
+   "description": "ATM WDL/DELHI/374350",
+   "ref": "956889",
+   "debit": "2000",
+   "credit": null,
+   "balance": "1882229.33"
+  },
+  {
+   "date": "2026-02-26",
+   "description": "NEFT-N537861089-ORCHARD HOUSING SOCIETY-SALARY",
+   "ref": "7646094985",
+   "debit": null,
+   "credit": "155062.96",
+   "balance": "2037292.29"
+  },
+  {
+   "date": "2026-02-27",
+   "description": "POS 0605XXXXXX5580 SPICEROUTE FOODS",
+   "ref": "99827428",
+   "debit": "13752.73",
+   "credit": null,
+   "balance": "2023539.56"
+  },
+  {
+   "date": "2026-02-27",
+   "description": "IMPS/P2A/715450023823/RAHUL SHARMA",
+   "ref": "273718889144",
+   "debit": null,
+   "credit": "18320.49",
+   "balance": "2041860.05"
+  },
+  {
+   "date": "2026-03-01",
+   "description": "UPI/DR/588871256363/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "738915896255",
+   "debit": "177.60",
+   "credit": null,
+   "balance": "2041682.45"
+  }
+ ],
+ "original_rows": [
+  {
+   "date": "2025-12-31",
+   "description": "ATM WDL/HYDERABAD/405310",
+   "ref": "512232",
+   "debit": "2000",
+   "credit": null,
+   "balance": "857701.81"
+  },
+  {
+   "date": "2026-01-02",
+   "description": "UPI/DR/328576155043/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "482178824282",
+   "debit": "3405.00",
+   "credit": null,
+   "balance": "854296.81"
+  },
+  {
+   "date": "2026-01-02",
+   "description": "NEFT-N380716782-NORTHSTAR INSURANCE-SALARY",
+   "ref": "6806803697",
+   "debit": null,
+   "credit": "135842.20",
+   "balance": "990139.01"
+  },
+  {
+   "date": "2026-01-03",
+   "description": "UPI/DR/344432726429/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "985066397593",
+   "debit": "3520.26",
+   "credit": null,
+   "balance": "986618.75"
+  },
+  {
+   "date": "2026-01-06",
+   "description": "POS 4034XXXXXX4738 STREAMBOX",
+   "ref": "54230989",
+   "debit": "8445.38",
+   "credit": null,
+   "balance": "978173.37"
+  },
+  {
+   "date": "2026-01-07",
+   "description": "INT.PD 70-18-2026 QTR CREDIT",
+   "ref": "866743",
+   "debit": null,
+   "credit": "745.42",
+   "balance": "978918.79"
+  },
+  {
+   "date": "2026-01-09",
+   "description": "ATM WDL/KOCHI/710489",
+   "ref": "734860",
+   "debit": "20000",
+   "credit": null,
+   "balance": "958918.79"
+  },
+  {
+   "date": "2026-01-09",
+   "description": "UPI/DR/934408918603/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "232871275578",
+   "debit": "98.33",
+   "credit": null,
+   "balance": "958820.46"
+  },
+  {
+   "date": "2026-01-12",
+   "description": "UPI/DR/941284478380/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "682251176136",
+   "debit": "2145.12",
+   "credit": null,
+   "balance": "956675.34"
+  },
+  {
+   "date": "2026-01-13",
+   "description": "POS 5058XXXXXX9953 STREAMBOX",
+   "ref": "87458199",
+   "debit": "5487.79",
+   "credit": null,
+   "balance": "951187.55"
+  },
+  {
+   "date": "2026-01-14",
+   "description": "NEFT-N433661560-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "0215124375",
+   "debit": null,
+   "credit": "25923.95",
+   "balance": "977111.50"
+  },
+  {
+   "date": "2026-01-14",
+   "description": "UPI/CR/369146756597/JOSEPH D SOUZA/okpay/UPI",
+   "ref": "405058043156",
+   "debit": null,
+   "credit": "14372.46",
+   "balance": "991483.96"
+  },
+  {
+   "date": "2026-01-16",
+   "description": "NEFT-N387328306-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "6219228142",
+   "debit": "13807.22",
+   "credit": null,
+   "balance": "977676.74"
+  },
+  {
+   "date": "2026-01-19",
+   "description": "IMPS/P2A/534757727613/JOSEPH D SOUZA",
+   "ref": "877984942753",
+   "debit": "1056.82",
+   "credit": null,
+   "balance": "976619.92"
+  },
+  {
+   "date": "2026-01-19",
+   "description": "UPI/CR/224626342303/S VENKATESH/okpay/UPI",
+   "ref": "663616741891",
+   "debit": null,
+   "credit": "19036.73",
+   "balance": "995656.65"
+  },
+  {
+   "date": "2026-01-20",
+   "description": "UPI/CR/917690137786/AMINA KHATUN/okpay/UPI",
+   "ref": "778007022658",
+   "debit": null,
+   "credit": "8061.75",
+   "balance": "1003718.40"
+  },
+  {
+   "date": "2026-01-20",
+   "description": "UPI/DR/164561659635/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "438303070509",
+   "debit": "330.69",
+   "credit": null,
+   "balance": "1003387.71"
+  },
+  {
+   "date": "2026-01-20",
+   "description": "UPI/DR/955902539363/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "364124457026",
+   "debit": "4905.86",
+   "credit": null,
+   "balance": "998481.85"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "POS 1229XXXXXX3558 GREENLEAF PHARMACY",
+   "ref": "18838047",
+   "debit": "1452.82",
+   "credit": null,
+   "balance": "997029.03"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "NEFT-N215262119-ACME PAYROLL SERVICES-SALARY",
+   "ref": "1171922932",
+   "debit": null,
+   "credit": "92864.05",
+   "balance": "1089893.08"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "NEFT-N463313432-ORCHARD HOUSING SOCIETY-SALARY",
+   "ref": "8865727246",
+   "debit": null,
+   "credit": "211348.65",
+   "balance": "1301241.73"
+  },
+  {
+   "date": "2026-01-23",
+   "description": "NEFT-N228123945-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "6270161351",
+   "debit": "32769.44",
+   "credit": null,
+   "balance": "1268472.29"
+  },
+  {
+   "date": "2026-01-24",
+   "description": "NEFT-N135006959-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "9630866169",
+   "debit": "43986.33",
+   "credit": null,
+   "balance": "1224485.96"
+  },
+  {
+   "date": "2026-01-24",
+   "description": "POS 6531XXXXXX1920 BOOKNEST",
+   "ref": "96066588",
+   "debit": "9019.73",
+   "credit": null,
+   "balance": "1215466.23"
+  },
+  {
+   "date": "2026-01-26",
+   "description": "UPI/CR/614908341649/PRIYA NAIR/okpay/UPI",
+   "ref": "111360896980",
+   "debit": null,
+   "credit": "24091.92",
+   "balance": "1239558.15"
+  },
+  {
+   "date": "2026-01-27",
+   "description": "UPI/CR/493481304823/PRIYA NAIR/okpay/UPI",
+   "ref": "593169023104",
+   "debit": null,
+   "credit": "16593.80",
+   "balance": "1256151.95"
+  },
+  {
+   "date": "2026-01-27",
+   "description": "POS 8050XXXXXX6345 STREAMBOX",
+   "ref": "50200936",
+   "debit": "11135.04",
+   "credit": null,
+   "balance": "1245016.91"
+  },
+  {
+   "date": "2026-01-28",
+   "description": "UPI/CR/546326073891/AMINA KHATUN/okpay/UPI",
+   "ref": "279318771925",
+   "debit": null,
+   "credit": "16882.29",
+   "balance": "1261899.20"
+  },
+  {
+   "date": "2026-01-28",
+   "description": "UPI/DR/327431260097/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "978717030087",
+   "debit": "4907.98",
+   "credit": null,
+   "balance": "1256991.22"
+  },
+  {
+   "date": "2026-01-29",
+   "description": "UPI/DR/795351346038/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "240950219128",
+   "debit": "5272.30",
+   "credit": null,
+   "balance": "1251718.92"
+  },
+  {
+   "date": "2026-01-29",
+   "description": "UPI/CR/499421217195/S VENKATESH/okpay/UPI",
+   "ref": "378090644426",
+   "debit": null,
+   "credit": "21257.51",
+   "balance": "1272976.43"
+  },
+  {
+   "date": "2026-01-30",
+   "description": "ACH D- ACME PAYROLL SERVICES-00024096",
+   "ref": "72654229",
+   "debit": "16244.78",
+   "credit": null,
+   "balance": "1256731.65"
+  },
+  {
+   "date": "2026-01-30",
+   "description": "UPI/DR/185926378845/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "928367831137",
+   "debit": "1019.34",
+   "credit": null,
+   "balance": "1255712.31"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "ATM WDL/DELHI/681033",
+   "ref": "736960",
+   "debit": "10000",
+   "credit": null,
+   "balance": "1245712.31"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "INT.PD 15-63-2026 QTR CREDIT",
+   "ref": "620671",
+   "debit": null,
+   "credit": "505.52",
+   "balance": "1246217.83"
+  },
+  {
+   "date": "2026-02-01",
+   "description": "UPI/CR/570463407833/AMINA KHATUN/okpay/UPI",
+   "ref": "594154291442",
+   "debit": null,
+   "credit": "25571.03",
+   "balance": "1271788.86"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "UPI/DR/016987480436/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "248641091106",
+   "debit": "5180.00",
+   "credit": null,
+   "balance": "1266608.86"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "NEFT-N698423830-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "8988930865",
+   "debit": null,
+   "credit": "163437.16",
+   "balance": "1430046.02"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "NEFT-N643420038-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "5657929820",
+   "debit": null,
+   "credit": "172301.71",
+   "balance": "1602347.73"
+  },
+  {
+   "date": "2026-02-03",
+   "description": "ATM WDL/DELHI/002527",
+   "ref": "529077",
+   "debit": "2000",
+   "credit": null,
+   "balance": "1600347.73"
+  },
+  {
+   "date": "2026-02-04",
+   "description": "NEFT-N767308599-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "5359407681",
+   "debit": "44663.81",
+   "credit": null,
+   "balance": "1555683.92"
+  },
+  {
+   "date": "2026-02-04",
+   "description": "NEFT-N296305662-ACME PAYROLL SERVICES-SALARY",
+   "ref": "2071118737",
+   "debit": null,
+   "credit": "165754.29",
+   "balance": "1721438.21"
+  },
+  {
+   "date": "2026-02-06",
+   "description": "NEFT-N512916637-NORTHSTAR INSURANCE-SALARY",
+   "ref": "5952056127",
+   "debit": null,
+   "credit": "124095.33",
+   "balance": "1845533.54"
+  },
+  {
+   "date": "2026-02-09",
+   "description": "UPI/DR/653623881327/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "535030289595",
+   "debit": "4860.48",
+   "credit": null,
+   "balance": "1840673.06"
+  },
+  {
+   "date": "2026-02-10",
+   "description": "NEFT-N779611859-NORTHSTAR INSURANCE-SALARY",
+   "ref": "7453630403",
+   "debit": null,
+   "credit": "85386.87",
+   "balance": "1926059.93"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "UPI/CR/358065544968/AMINA KHATUN/okpay/UPI",
+   "ref": "997652852056",
+   "debit": null,
+   "credit": "14349.06",
+   "balance": "1940408.99"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "UPI/DR/208261715407/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "055613346301",
+   "debit": "4677.44",
+   "credit": null,
+   "balance": "1935731.55"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "NEFT-N469513958-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "7316122058",
+   "debit": "12919.35",
+   "credit": null,
+   "balance": "1922812.20"
+  },
+  {
+   "date": "2026-02-13",
+   "description": "UPI/DR/741555989494/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "316957363807",
+   "debit": "2758.60",
+   "credit": null,
+   "balance": "1920053.60"
+  },
+  {
+   "date": "2026-02-13",
+   "description": "UPI/DR/307858999951/TECHHUB ELECTRONICS/okpay/UPI PAYMENT REF",
+   "ref": "231291207667",
+   "debit": "2941.92",
+   "credit": null,
+   "balance": "1917111.68"
+  },
+  {
+   "date": "2026-02-16",
+   "description": "UPI/DR/202213982698/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "338380433402",
+   "debit": "5502.36",
+   "credit": null,
+   "balance": "1911609.32"
+  },
+  {
+   "date": "2026-02-19",
+   "description": "NEFT-N660928810-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "9380801676",
+   "debit": "25874.32",
+   "credit": null,
+   "balance": "1885735.00"
+  },
+  {
+   "date": "2026-02-20",
+   "description": "IMPS/P2A/909198126624/RAHUL SHARMA",
+   "ref": "452478521738",
+   "debit": "2027.00",
+   "credit": null,
+   "balance": "1883708.00"
+  },
+  {
+   "date": "2026-02-21",
+   "description": "IMPS/P2A/905422235119/JOSEPH D SOUZA",
+   "ref": "161567056478",
+   "debit": null,
+   "credit": "763.69",
+   "balance": "1884471.69"
+  },
+  {
+   "date": "2026-02-24",
+   "description": "UPI/DR/099682407211/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "470046109873",
+   "debit": "242.36",
+   "credit": null,
+   "balance": "1884229.33"
+  },
+  {
+   "date": "2026-02-26",
+   "description": "ATM WDL/DELHI/374350",
+   "ref": "956889",
+   "debit": "2000",
+   "credit": null,
+   "balance": "1882229.33"
+  },
+  {
+   "date": "2026-02-26",
+   "description": "NEFT-N537861089-ORCHARD HOUSING SOCIETY-SALARY",
+   "ref": "7646094985",
+   "debit": null,
+   "credit": "155062.96",
+   "balance": "2037292.29"
+  },
+  {
+   "date": "2026-02-27",
+   "description": "POS 0605XXXXXX5580 SPICEROUTE FOODS",
+   "ref": "99827428",
+   "debit": "13752.73",
+   "credit": null,
+   "balance": "2023539.56"
+  },
+  {
+   "date": "2026-02-27",
+   "description": "IMPS/P2A/715450023823/RAHUL SHARMA",
+   "ref": "273718889144",
+   "debit": null,
+   "credit": "18320.49",
+   "balance": "2041860.05"
+  },
+  {
+   "date": "2026-03-01",
+   "description": "UPI/DR/588871256363/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "738915896255",
+   "debit": "177.60",
+   "credit": null,
+   "balance": "2041682.45"
+  }
+ ],
+ "source_defect": {
+  "type": "duplicate_row",
+  "row": 44
+ },
+ "image_only": false,
+ "expected_review": true,
+ "summary_style": "opening_row",
+ "summary_printed": true
+}

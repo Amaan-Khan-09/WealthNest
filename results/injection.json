@@ -1,0 +1,214 @@
+{
+ "n_per_cell": 300,
+ "cells": {
+  "dropped row | running balance": {
+   "error": "dropped row",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "duplicated row | running balance": {
+   "error": "duplicated row",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "debit/credit flipped | running balance": {
+   "error": "debit/credit flipped",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "amount digit changed | running balance": {
+   "error": "amount digit changed",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "adjacent digits transposed | running balance": {
+   "error": "adjacent digits transposed",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "two offsetting amount errors | running balance": {
+   "error": "two offsetting amount errors",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "printed balance wrong | running balance": {
+   "error": "printed balance wrong",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "date out of order | running balance": {
+   "error": "date out of order",
+   "layout": "running balance",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "date wrong but still in order | running balance": {
+   "error": "date wrong but still in order",
+   "layout": "running balance",
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.012643429997735661
+   ]
+  },
+  "description wrong | running balance": {
+   "error": "description wrong",
+   "layout": "running balance",
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.012643429997735661
+   ]
+  },
+  "dropped row | opening/closing only": {
+   "error": "dropped row",
+   "layout": "opening/closing only",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "duplicated row | opening/closing only": {
+   "error": "duplicated row",
+   "layout": "opening/closing only",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "debit/credit flipped | opening/closing only": {
+   "error": "debit/credit flipped",
+   "layout": "opening/closing only",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "amount digit changed | opening/closing only": {
+   "error": "amount digit changed",
+   "layout": "opening/closing only",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "adjacent digits transposed | opening/closing only": {
+   "error": "adjacent digits transposed",
+   "layout": "opening/closing only",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "two offsetting amount errors | opening/closing only": {
+   "error": "two offsetting amount errors",
+   "layout": "opening/closing only",
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.012643429997735661
+   ]
+  },
+  "date out of order | opening/closing only": {
+   "error": "date out of order",
+   "layout": "opening/closing only",
+   "k": 300,
+   "n": 300,
+   "rate": 1.0,
+   "ci95": [
+    0.9873565700022643,
+    0.9999999999999999
+   ]
+  },
+  "date wrong but still in order | opening/closing only": {
+   "error": "date wrong but still in order",
+   "layout": "opening/closing only",
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.012643429997735661
+   ]
+  },
+  "description wrong | opening/closing only": {
+   "error": "description wrong",
+   "layout": "opening/closing only",
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.012643429997735661
+   ]
+  }
+ }
+}

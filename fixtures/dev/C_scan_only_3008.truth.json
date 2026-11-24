@@ -1,0 +1,562 @@
+{
+ "layout": "C",
+ "category": "scan_only",
+ "seed": 3008,
+ "split": "dev",
+ "opening": "738998.80",
+ "closing": "836964.33",
+ "has_balance": true,
+ "printed_rows": [
+  {
+   "date": "2025-06-22",
+   "description": "UPI/CR/511529287617/PRIYA NAIR/okpay/UPI",
+   "ref": "980627895291",
+   "debit": null,
+   "credit": "29587.04",
+   "balance": "768585.84"
+  },
+  {
+   "date": "2025-06-22",
+   "description": "UPI/DR/921735505753/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "872536417383",
+   "debit": "69.95",
+   "credit": null,
+   "balance": "768515.89"
+  },
+  {
+   "date": "2025-06-23",
+   "description": "POS 1792XXXXXX0141 QUICKBITES",
+   "ref": "40168653",
+   "debit": "12771.59",
+   "credit": null,
+   "balance": "755744.30"
+  },
+  {
+   "date": "2025-06-23",
+   "description": "UPI/DR/672681549464/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "664994114792",
+   "debit": "4102.76",
+   "credit": null,
+   "balance": "751641.54"
+  },
+  {
+   "date": "2025-06-24",
+   "description": "ACH D- ORCHARD HOUSING SOCIETY-13964397",
+   "ref": "94901889",
+   "debit": "3898.05",
+   "credit": null,
+   "balance": "747743.49"
+  },
+  {
+   "date": "2025-06-26",
+   "description": "ATM WDL/HYDERABAD/490301",
+   "ref": "864203",
+   "debit": "2000",
+   "credit": null,
+   "balance": "745743.49"
+  },
+  {
+   "date": "2025-06-27",
+   "description": "POS 7809XXXXXX2721 GREENLEAF PHARMACY",
+   "ref": "70019238",
+   "debit": "14087.03",
+   "credit": null,
+   "balance": "731656.46"
+  },
+  {
+   "date": "2025-06-28",
+   "description": "UPI/DR/201603192748/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "379610848273",
+   "debit": "3460.08",
+   "credit": null,
+   "balance": "728196.38"
+  },
+  {
+   "date": "2025-06-28",
+   "description": "UPI/CR/856303254637/MOHD IRFAN/okpay/UPI",
+   "ref": "251321543409",
+   "debit": null,
+   "credit": "21121.53",
+   "balance": "749317.91"
+  },
+  {
+   "date": "2025-07-01",
+   "description": "UPI/DR/510517183758/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "658585141643",
+   "debit": "395.20",
+   "credit": null,
+   "balance": "748922.71"
+  },
+  {
+   "date": "2025-07-04",
+   "description": "INT.PD 23-58-2026 QTR CREDIT",
+   "ref": "586236",
+   "debit": null,
+   "credit": "23.73",
+   "balance": "748946.44"
+  },
+  {
+   "date": "2025-07-07",
+   "description": "INT.PD 26-07-2026 QTR CREDIT",
+   "ref": "525740",
+   "debit": null,
+   "credit": "199.59",
+   "balance": "749146.03"
+  },
+  {
+   "date": "2025-07-08",
+   "description": "ATM WDL/HYDERABAD/783314",
+   "ref": "020004",
+   "debit": "20000",
+   "credit": null,
+   "balance": "729146.03"
+  },
+  {
+   "date": "2025-07-08",
+   "description": "UPI/CR/262635037244/S VENKATESH/okpay/UPI",
+   "ref": "495792980060",
+   "debit": null,
+   "credit": "21342.90",
+   "balance": "750488.93"
+  },
+  {
+   "date": "2025-07-09",
+   "description": "POS 2597XXXXXX4200 GREENLEAF PHARMACY",
+   "ref": "51007469",
+   "debit": "13699.03",
+   "credit": null,
+   "balance": "736789.90"
+  },
+  {
+   "date": "2025-07-09",
+   "description": "ATM WDL/KOCHI/099968",
+   "ref": "053611",
+   "debit": "2000",
+   "credit": null,
+   "balance": "734789.90"
+  },
+  {
+   "date": "2025-07-09",
+   "description": "NEFT-N435124033-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "4296653191",
+   "debit": null,
+   "credit": "156571.73",
+   "balance": "891361.63"
+  },
+  {
+   "date": "2025-07-11",
+   "description": "ATM WDL/KOCHI/803176",
+   "ref": "755454",
+   "debit": "2000",
+   "credit": null,
+   "balance": "889361.63"
+  },
+  {
+   "date": "2025-07-11",
+   "description": "UPI/DR/631692649175/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "001859201607",
+   "debit": "5591.11",
+   "credit": null,
+   "balance": "883770.52"
+  },
+  {
+   "date": "2025-07-11",
+   "description": "UPI/DR/215126824856/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "081893061249",
+   "debit": "5635.72",
+   "credit": null,
+   "balance": "878134.80"
+  },
+  {
+   "date": "2025-07-14",
+   "description": "NEFT-N698986758-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "5784305371",
+   "debit": "55912.14",
+   "credit": null,
+   "balance": "822222.66"
+  },
+  {
+   "date": "2025-07-15",
+   "description": "NEFT-N038046841-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "4589834973",
+   "debit": "53628.62",
+   "credit": null,
+   "balance": "768594.04"
+  },
+  {
+   "date": "2025-07-15",
+   "description": "UPI/DR/233853245053/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "257113311572",
+   "debit": "3838.78",
+   "credit": null,
+   "balance": "764755.26"
+  },
+  {
+   "date": "2025-07-18",
+   "description": "ACH D- NORTHSTAR INSURANCE-24873768",
+   "ref": "39475033",
+   "debit": "25148.14",
+   "credit": null,
+   "balance": "739607.12"
+  },
+  {
+   "date": "2025-07-19",
+   "description": "ACH D- BRIGHTPATH LABS PVT LTD-45957382",
+   "ref": "22634916",
+   "debit": "10296.34",
+   "credit": null,
+   "balance": "729310.78"
+  },
+  {
+   "date": "2025-07-21",
+   "description": "IMPS/P2A/465631351747/MOHD IRFAN",
+   "ref": "178988813679",
+   "debit": "9214.09",
+   "credit": null,
+   "balance": "720096.69"
+  },
+  {
+   "date": "2025-07-22",
+   "description": "UPI/DR/266866851217/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "022617739979",
+   "debit": "5719.46",
+   "credit": null,
+   "balance": "714377.23"
+  },
+  {
+   "date": "2025-07-23",
+   "description": "NEFT-N056728703-ACME PAYROLL SERVICES-SALARY",
+   "ref": "0260043420",
+   "debit": null,
+   "credit": "160052.60",
+   "balance": "874429.83"
+  },
+  {
+   "date": "2025-07-23",
+   "description": "ATM WDL/DELHI/247176",
+   "ref": "004119",
+   "debit": "10000",
+   "credit": null,
+   "balance": "864429.83"
+  },
+  {
+   "date": "2025-07-25",
+   "description": "NEFT-N296610005-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "6074165928",
+   "debit": "39176.89",
+   "credit": null,
+   "balance": "825252.94"
+  },
+  {
+   "date": "2025-07-26",
+   "description": "NEFT-N322908601-ACME PAYROLL SERVICES-RENT/EMI SETTLEMENT",
+   "ref": "0122141265",
+   "debit": "22989.95",
+   "credit": null,
+   "balance": "802262.99"
+  },
+  {
+   "date": "2025-07-29",
+   "description": "UPI/DR/112521325666/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "832408189436",
+   "debit": "2323.02",
+   "credit": null,
+   "balance": "799939.97"
+  },
+  {
+   "date": "2025-07-30",
+   "description": "UPI/CR/006919497828/GURPREET SINGH/okpay/UPI",
+   "ref": "793741525524",
+   "debit": null,
+   "credit": "10778.92",
+   "balance": "810718.89"
+  },
+  {
+   "date": "2025-08-02",
+   "description": "UPI/CR/008420827709/GURPREET SINGH/okpay/UPI",
+   "ref": "560366360492",
+   "debit": null,
+   "credit": "26245.44",
+   "balance": "836964.33"
+  }
+ ],
+ "original_rows": [
+  {
+   "date": "2025-06-22",
+   "description": "UPI/CR/511529287617/PRIYA NAIR/okpay/UPI",
+   "ref": "980627895291",
+   "debit": null,
+   "credit": "29587.04",
+   "balance": "768585.84"
+  },
+  {
+   "date": "2025-06-22",
+   "description": "UPI/DR/921735505753/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "872536417383",
+   "debit": "69.95",
+   "credit": null,
+   "balance": "768515.89"
+  },
+  {
+   "date": "2025-06-23",
+   "description": "POS 1792XXXXXX0141 QUICKBITES",
+   "ref": "40168653",
+   "debit": "12771.59",
+   "credit": null,
+   "balance": "755744.30"
+  },
+  {
+   "date": "2025-06-23",
+   "description": "UPI/DR/672681549464/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "664994114792",
+   "debit": "4102.76",
+   "credit": null,
+   "balance": "751641.54"
+  },
+  {
+   "date": "2025-06-24",
+   "description": "ACH D- ORCHARD HOUSING SOCIETY-13964397",
+   "ref": "94901889",
+   "debit": "3898.05",
+   "credit": null,
+   "balance": "747743.49"
+  },
+  {
+   "date": "2025-06-26",
+   "description": "ATM WDL/HYDERABAD/490301",
+   "ref": "864203",
+   "debit": "2000",
+   "credit": null,
+   "balance": "745743.49"
+  },
+  {
+   "date": "2025-06-27",
+   "description": "POS 7809XXXXXX2721 GREENLEAF PHARMACY",
+   "ref": "70019238",
+   "debit": "14087.03",
+   "credit": null,
+   "balance": "731656.46"
+  },
+  {
+   "date": "2025-06-28",
+   "description": "UPI/DR/201603192748/PETROPOINT/okpay/UPI PAYMENT REF",
+   "ref": "379610848273",
+   "debit": "3460.08",
+   "credit": null,
+   "balance": "728196.38"
+  },
+  {
+   "date": "2025-06-28",
+   "description": "UPI/CR/856303254637/MOHD IRFAN/okpay/UPI",
+   "ref": "251321543409",
+   "debit": null,
+   "credit": "21121.53",
+   "balance": "749317.91"
+  },
+  {
+   "date": "2025-07-01",
+   "description": "UPI/DR/510517183758/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "658585141643",
+   "debit": "395.20",
+   "credit": null,
+   "balance": "748922.71"
+  },
+  {
+   "date": "2025-07-04",
+   "description": "INT.PD 23-58-2026 QTR CREDIT",
+   "ref": "586236",
+   "debit": null,
+   "credit": "23.73",
+   "balance": "748946.44"
+  },
+  {
+   "date": "2025-07-07",
+   "description": "INT.PD 26-07-2026 QTR CREDIT",
+   "ref": "525740",
+   "debit": null,
+   "credit": "199.59",
+   "balance": "749146.03"
+  },
+  {
+   "date": "2025-07-08",
+   "description": "ATM WDL/HYDERABAD/783314",
+   "ref": "020004",
+   "debit": "20000",
+   "credit": null,
+   "balance": "729146.03"
+  },
+  {
+   "date": "2025-07-08",
+   "description": "UPI/CR/262635037244/S VENKATESH/okpay/UPI",
+   "ref": "495792980060",
+   "debit": null,
+   "credit": "21342.90",
+   "balance": "750488.93"
+  },
+  {
+   "date": "2025-07-09",
+   "description": "POS 2597XXXXXX4200 GREENLEAF PHARMACY",
+   "ref": "51007469",
+   "debit": "13699.03",
+   "credit": null,
+   "balance": "736789.90"
+  },
+  {
+   "date": "2025-07-09",
+   "description": "ATM WDL/KOCHI/099968",
+   "ref": "053611",
+   "debit": "2000",
+   "credit": null,
+   "balance": "734789.90"
+  },
+  {
+   "date": "2025-07-09",
+   "description": "NEFT-N435124033-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "4296653191",
+   "debit": null,
+   "credit": "156571.73",
+   "balance": "891361.63"
+  },
+  {
+   "date": "2025-07-11",
+   "description": "ATM WDL/KOCHI/803176",
+   "ref": "755454",
+   "debit": "2000",
+   "credit": null,
+   "balance": "889361.63"
+  },
+  {
+   "date": "2025-07-11",
+   "description": "UPI/DR/631692649175/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "001859201607",
+   "debit": "5591.11",
+   "credit": null,
+   "balance": "883770.52"
+  },
+  {
+   "date": "2025-07-11",
+   "description": "UPI/DR/215126824856/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "081893061249",
+   "debit": "5635.72",
+   "credit": null,
+   "balance": "878134.80"
+  },
+  {
+   "date": "2025-07-14",
+   "description": "NEFT-N698986758-ORCHARD HOUSING SOCIETY-RENT/EMI SETTLEMENT",
+   "ref": "5784305371",
+   "debit": "55912.14",
+   "credit": null,
+   "balance": "822222.66"
+  },
+  {
+   "date": "2025-07-15",
+   "description": "NEFT-N038046841-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "4589834973",
+   "debit": "53628.62",
+   "credit": null,
+   "balance": "768594.04"
+  },
+  {
+   "date": "2025-07-15",
+   "description": "UPI/DR/233853245053/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "257113311572",
+   "debit": "3838.78",
+   "credit": null,
+   "balance": "764755.26"
+  },
+  {
+   "date": "2025-07-18",
+   "description": "ACH D- NORTHSTAR INSURANCE-24873768",
+   "ref": "39475033",
+   "debit": "25148.14",
+   "credit": null,
+   "balance": "739607.12"
+  },
+  {
+   "date": "2025-07-19",
+   "description": "ACH D- BRIGHTPATH LABS PVT LTD-45957382",
+   "ref": "22634916",
+   "debit": "10296.34",
+   "credit": null,
+   "balance": "729310.78"
+  },
+  {
+   "date": "2025-07-21",
+   "description": "IMPS/P2A/465631351747/MOHD IRFAN",
+   "ref": "178988813679",
+   "debit": "9214.09",
+   "credit": null,
+   "balance": "720096.69"
+  },
+  {
+   "date": "2025-07-22",
+   "description": "UPI/DR/266866851217/METRORAIL CARD/okpay/UPI PAYMENT REF",
+   "ref": "022617739979",
+   "debit": "5719.46",
+   "credit": null,
+   "balance": "714377.23"
+  },
+  {
+   "date": "2025-07-23",
+   "description": "NEFT-N056728703-ACME PAYROLL SERVICES-SALARY",
+   "ref": "0260043420",
+   "debit": null,
+   "credit": "160052.60",
+   "balance": "874429.83"
+  },
+  {
+   "date": "2025-07-23",
+   "description": "ATM WDL/DELHI/247176",
+   "ref": "004119",
+   "debit": "10000",
+   "credit": null,
+   "balance": "864429.83"
+  },
+  {
+   "date": "2025-07-25",
+   "description": "NEFT-N296610005-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "6074165928",
+   "debit": "39176.89",
+   "credit": null,
+   "balance": "825252.94"
+  },
+  {
+   "date": "2025-07-26",
+   "description": "NEFT-N322908601-ACME PAYROLL SERVICES-RENT/EMI SETTLEMENT",
+   "ref": "0122141265",
+   "debit": "22989.95",
+   "credit": null,
+   "balance": "802262.99"
+  },
+  {
+   "date": "2025-07-29",
+   "description": "UPI/DR/112521325666/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "832408189436",
+   "debit": "2323.02",
+   "credit": null,
+   "balance": "799939.97"
+  },
+  {
+   "date": "2025-07-30",
+   "description": "UPI/CR/006919497828/GURPREET SINGH/okpay/UPI",
+   "ref": "793741525524",
+   "debit": null,
+   "credit": "10778.92",
+   "balance": "810718.89"
+  },
+  {
+   "date": "2025-08-02",
+   "description": "UPI/CR/008420827709/GURPREET SINGH/okpay/UPI",
+   "ref": "560366360492",
+   "debit": null,
+   "credit": "26245.44",
+   "balance": "836964.33"
+  }
+ ],
+ "source_defect": null,
+ "image_only": true,
+ "expected_review": true,
+ "summary_style": "opening_row",
+ "summary_printed": true
+}

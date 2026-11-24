@@ -1,0 +1,15 @@
+{
+ "status": "NEEDS_REVIEW",
+ "baseline_status": "READY",
+ "row": 4,
+ "rows": 41,
+ "flags": [
+  "Balance moved by 77,036.78 but this row accounts for 76,036.78 (unexplained 1,000.00). amount misread, or a row is missing/extra just before this one.",
+  "Opening 391,614.90 + credits 1,014,979.22 - debits 190,743.91 = 1,215,850.21, but closing is 1,216,850.21 (off by -1,000.00)."
+ ],
+ "baseline_closing": "1216850.21",
+ "closing": "1216850.21",
+ "row_debit": "None",
+ "row_credit": "76036.78",
+ "row_balance": "487190.25"
+}

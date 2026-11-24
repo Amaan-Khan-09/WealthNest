@@ -1,0 +1,418 @@
+{
+ "layout": "G",
+ "category": "clean",
+ "seed": 7019,
+ "split": "holdout",
+ "opening": "388123.03",
+ "closing": "727900.94",
+ "has_balance": false,
+ "printed_rows": [
+  {
+   "date": "2026-02-10",
+   "description": "UPI/DR/652531399425/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "614964670899",
+   "debit": "5095.67",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-11",
+   "description": "INT.PD 29-01-2026 QTR CREDIT",
+   "ref": "195582",
+   "debit": null,
+   "credit": "473.60",
+   "balance": null
+  },
+  {
+   "date": "2026-02-12",
+   "description": "UPI/CR/209834611650/MOHD IRFAN/okpay/UPI",
+   "ref": "955897053829",
+   "debit": null,
+   "credit": "5440.16",
+   "balance": null
+  },
+  {
+   "date": "2026-02-12",
+   "description": "INT.PD 25-57-2026 QTR CREDIT",
+   "ref": "232535",
+   "debit": null,
+   "credit": "767.96",
+   "balance": null
+  },
+  {
+   "date": "2026-02-13",
+   "description": "POS 1288XXXXXX7311 AQUAPURE WATER",
+   "ref": "51340402",
+   "debit": "8932.92",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-16",
+   "description": "UPI/DR/064052262055/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "221613715730",
+   "debit": "2618.55",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-19",
+   "description": "NEFT-N506302641-NORTHSTAR INSURANCE-SALARY",
+   "ref": "0150339328",
+   "debit": null,
+   "credit": "138610.93",
+   "balance": null
+  },
+  {
+   "date": "2026-02-20",
+   "description": "UPI/DR/566646119751/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "905757184193",
+   "debit": "111.95",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-20",
+   "description": "IMPS/P2A/134034580264/S VENKATESH",
+   "ref": "193189726794",
+   "debit": null,
+   "credit": "27160.67",
+   "balance": null
+  },
+  {
+   "date": "2026-02-20",
+   "description": "NEFT-N918461456-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "9059418258",
+   "debit": "16617.54",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-21",
+   "description": "UPI/DR/176979844834/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "927607706193",
+   "debit": "5237.73",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-22",
+   "description": "NEFT-N413045886-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "5647091172",
+   "debit": null,
+   "credit": "129627.61",
+   "balance": null
+  },
+  {
+   "date": "2026-02-22",
+   "description": "UPI/DR/093612463024/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "308247501843",
+   "debit": "4459.98",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-22",
+   "description": "NEFT-N241769565-ACME PAYROLL SERVICES-SALARY",
+   "ref": "9462280529",
+   "debit": null,
+   "credit": "199891.12",
+   "balance": null
+  },
+  {
+   "date": "2026-02-22",
+   "description": "POS 1587XXXXXX7080 GREENLEAF PHARMACY",
+   "ref": "50504039",
+   "debit": "11088.56",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-23",
+   "description": "NEFT-N529214169-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "3002771586",
+   "debit": "41891.42",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-25",
+   "description": "IMPS/P2A/818102271322/PRIYA NAIR",
+   "ref": "958489947583",
+   "debit": "23037.37",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-25",
+   "description": "UPI/DR/063014207132/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "176579878797",
+   "debit": "5971.54",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-25",
+   "description": "UPI/CR/179594008110/K LAKSHMI DEVI/okpay/UPI",
+   "ref": "614004487844",
+   "debit": null,
+   "credit": "21431.16",
+   "balance": null
+  },
+  {
+   "date": "2026-02-25",
+   "description": "UPI/DR/755784901264/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "193612515129",
+   "debit": "419.20",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-27",
+   "description": "NEFT-N245359211-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "3741583915",
+   "debit": "20741.86",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-02-28",
+   "description": "IMPS/P2A/320653561557/PRIYA NAIR",
+   "ref": "477389122630",
+   "debit": "635.83",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-03-01",
+   "description": "ATM WDL/DELHI/089757",
+   "ref": "942362",
+   "debit": "5000",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-03-04",
+   "description": "NEFT-N856616207-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "6682543225",
+   "debit": "29329.41",
+   "credit": null,
+   "balance": null
+  },
+  {
+   "date": "2026-03-06",
+   "description": "UPI/DR/266290922580/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "935696665161",
+   "debit": "2435.77",
+   "credit": null,
+   "balance": null
+  }
+ ],
+ "original_rows": [
+  {
+   "date": "2026-02-10",
+   "description": "UPI/DR/652531399425/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "614964670899",
+   "debit": "5095.67",
+   "credit": null,
+   "balance": "383027.36"
+  },
+  {
+   "date": "2026-02-11",
+   "description": "INT.PD 29-01-2026 QTR CREDIT",
+   "ref": "195582",
+   "debit": null,
+   "credit": "473.60",
+   "balance": "383500.96"
+  },
+  {
+   "date": "2026-02-12",
+   "description": "UPI/CR/209834611650/MOHD IRFAN/okpay/UPI",
+   "ref": "955897053829",
+   "debit": null,
+   "credit": "5440.16",
+   "balance": "388941.12"
+  },
+  {
+   "date": "2026-02-12",
+   "description": "INT.PD 25-57-2026 QTR CREDIT",
+   "ref": "232535",
+   "debit": null,
+   "credit": "767.96",
+   "balance": "389709.08"
+  },
+  {
+   "date": "2026-02-13",
+   "description": "POS 1288XXXXXX7311 AQUAPURE WATER",
+   "ref": "51340402",
+   "debit": "8932.92",
+   "credit": null,
+   "balance": "380776.16"
+  },
+  {
+   "date": "2026-02-16",
+   "description": "UPI/DR/064052262055/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "221613715730",
+   "debit": "2618.55",
+   "credit": null,
+   "balance": "378157.61"
+  },
+  {
+   "date": "2026-02-19",
+   "description": "NEFT-N506302641-NORTHSTAR INSURANCE-SALARY",
+   "ref": "0150339328",
+   "debit": null,
+   "credit": "138610.93",
+   "balance": "516768.54"
+  },
+  {
+   "date": "2026-02-20",
+   "description": "UPI/DR/566646119751/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "905757184193",
+   "debit": "111.95",
+   "credit": null,
+   "balance": "516656.59"
+  },
+  {
+   "date": "2026-02-20",
+   "description": "IMPS/P2A/134034580264/S VENKATESH",
+   "ref": "193189726794",
+   "debit": null,
+   "credit": "27160.67",
+   "balance": "543817.26"
+  },
+  {
+   "date": "2026-02-20",
+   "description": "NEFT-N918461456-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "9059418258",
+   "debit": "16617.54",
+   "credit": null,
+   "balance": "527199.72"
+  },
+  {
+   "date": "2026-02-21",
+   "description": "UPI/DR/176979844834/QUICKBITES/okpay/UPI PAYMENT REF",
+   "ref": "927607706193",
+   "debit": "5237.73",
+   "credit": null,
+   "balance": "521961.99"
+  },
+  {
+   "date": "2026-02-22",
+   "description": "NEFT-N413045886-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "5647091172",
+   "debit": null,
+   "credit": "129627.61",
+   "balance": "651589.60"
+  },
+  {
+   "date": "2026-02-22",
+   "description": "UPI/DR/093612463024/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "308247501843",
+   "debit": "4459.98",
+   "credit": null,
+   "balance": "647129.62"
+  },
+  {
+   "date": "2026-02-22",
+   "description": "NEFT-N241769565-ACME PAYROLL SERVICES-SALARY",
+   "ref": "9462280529",
+   "debit": null,
+   "credit": "199891.12",
+   "balance": "847020.74"
+  },
+  {
+   "date": "2026-02-22",
+   "description": "POS 1587XXXXXX7080 GREENLEAF PHARMACY",
+   "ref": "50504039",
+   "debit": "11088.56",
+   "credit": null,
+   "balance": "835932.18"
+  },
+  {
+   "date": "2026-02-23",
+   "description": "NEFT-N529214169-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "3002771586",
+   "debit": "41891.42",
+   "credit": null,
+   "balance": "794040.76"
+  },
+  {
+   "date": "2026-02-25",
+   "description": "IMPS/P2A/818102271322/PRIYA NAIR",
+   "ref": "958489947583",
+   "debit": "23037.37",
+   "credit": null,
+   "balance": "771003.39"
+  },
+  {
+   "date": "2026-02-25",
+   "description": "UPI/DR/063014207132/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "176579878797",
+   "debit": "5971.54",
+   "credit": null,
+   "balance": "765031.85"
+  },
+  {
+   "date": "2026-02-25",
+   "description": "UPI/CR/179594008110/K LAKSHMI DEVI/okpay/UPI",
+   "ref": "614004487844",
+   "debit": null,
+   "credit": "21431.16",
+   "balance": "786463.01"
+  },
+  {
+   "date": "2026-02-25",
+   "description": "UPI/DR/755784901264/AQUAPURE WATER/okpay/UPI PAYMENT REF",
+   "ref": "193612515129",
+   "debit": "419.20",
+   "credit": null,
+   "balance": "786043.81"
+  },
+  {
+   "date": "2026-02-27",
+   "description": "NEFT-N245359211-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "3741583915",
+   "debit": "20741.86",
+   "credit": null,
+   "balance": "765301.95"
+  },
+  {
+   "date": "2026-02-28",
+   "description": "IMPS/P2A/320653561557/PRIYA NAIR",
+   "ref": "477389122630",
+   "debit": "635.83",
+   "credit": null,
+   "balance": "764666.12"
+  },
+  {
+   "date": "2026-03-01",
+   "description": "ATM WDL/DELHI/089757",
+   "ref": "942362",
+   "debit": "5000",
+   "credit": null,
+   "balance": "759666.12"
+  },
+  {
+   "date": "2026-03-04",
+   "description": "NEFT-N856616207-BRIGHTPATH LABS PVT LTD-RENT/EMI SETTLEMENT",
+   "ref": "6682543225",
+   "debit": "29329.41",
+   "credit": null,
+   "balance": "730336.71"
+  },
+  {
+   "date": "2026-03-06",
+   "description": "UPI/DR/266290922580/GREENLEAF PHARMACY/okpay/UPI PAYMENT REF",
+   "ref": "935696665161",
+   "debit": "2435.77",
+   "credit": null,
+   "balance": "727900.94"
+  }
+ ],
+ "source_defect": null,
+ "image_only": false,
+ "expected_review": false,
+ "summary_style": "table_box",
+ "summary_printed": true
+}

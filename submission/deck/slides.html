@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Statement Guard: WealthNest Case Challenge 2026, Product Engineering &amp; AI</title>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #e9e8e4; }
+  body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #0b0b0b; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { width: 1280px; height: 720px; background: #fff; position: relative; overflow: hidden; page-break-after: always; break-after: page;
+           padding: 46px 64px 54px; margin: 0 auto 24px; }
+  @media print { .slide { margin: 0; } html, body { background: #fff; } }
+  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.3px; }
+  h2 { font-size: 22px; margin: 0 0 8px; font-weight: 650; }
+  .kicker { font-size: 14px; letter-spacing: 1.6px; text-transform: uppercase; color: #2a78d6; font-weight: 700; margin-bottom: 8px; }
+  p, li { font-size: 19px; line-height: 1.42; color: #2b2a28; margin: 0 0 8px; }
+  ul { margin: 6px 0 0; padding-left: 22px; }
+  .sub { font-size: 20px; color: #52514e; margin: 0 0 18px; }
+  .foot { position: absolute; left: 64px; right: 64px; bottom: 18px; font-size: 12.5px; color: #8a8982; display: flex; justify-content: space-between; }
+  .pending { background: #fff1b8; color: #6b4a00; border: 1px dashed #c98500; padding: 1px 7px; border-radius: 5px; font-weight: 600; font-size: 0.9em; white-space: nowrap; }
+  .cols { display: flex; gap: 32px; }
+  .col { flex: 1; min-width: 0; }
+  .card { border: 1px solid #e3e2dd; border-radius: 12px; padding: 14px 18px; background: #fbfbf9; }
+  .card.red { border-color: #e34948; background: #fdeeee; }
+  .card.green { border-color: #1baf7a; background: #eaf6f0; }
+  .card.amber { border-color: #eda100; background: #fff6e5; }
+  .card.blue { border-color: #2a78d6; background: #eef3fb; }
+  .big { font-size: 44px; font-weight: 750; letter-spacing: -1px; line-height: 1; }
+  .lbl { font-size: 14.5px; color: #52514e; margin-top: 4px; line-height: 1.3; }
+  table { border-collapse: collapse; width: 100%; font-size: 16px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #e3e2dd; vertical-align: top; }
+  th { font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.8px; color: #52514e; border-bottom: 2px solid #0b0b0b; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .good { color: #1b7a57; font-weight: 700; } .bad { color: #c93a39; font-weight: 700; }
+  img { display: block; max-width: 100%; }
+  code, .mono { font-family: Consolas, "Cascadia Mono", monospace; font-size: 0.88em; background: #f1f0ec; padding: 1px 6px; border-radius: 4px; }
+  pre { font-family: Consolas, "Cascadia Mono", monospace; font-size: 15px; background: #14130f; color: #eae8e0; border-radius: 10px; padding: 14px 18px; margin: 0; line-height: 1.5; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 2px 9px; border-radius: 999px; margin-right: 6px; }
+  .tag.obs { background: #e6f3ec; color: #1b7a57; } .tag.hyp { background: #eef3fb; color: #1d5fb0; } .tag.proto { background: #f1f0ec; color: #52514e; }
+  aside.notes { display: none; }
+  .draft { position: absolute; top: 18px; right: 28px; font-size: 12px; font-weight: 700; letter-spacing: 1.4px; color: #c98500; }
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="slide" style="padding-top:78px">
+  <div class="draft">DRAFT: PENDING ITEMS HIGHLIGHTED</div>
+  <div class="kicker">WealthNest National Case Study Challenge 2026</div>
+  <h1 style="font-size:58px; margin-bottom:14px">Statement Guard</h1>
+  <p class="sub" style="font-size:26px; max-width:980px; color:#2b2a28">A bank statement should check itself before it is allowed to touch a family's net worth.</p>
+  <div style="margin-top:34px; display:grid; grid-template-columns:210px 1fr; row-gap:10px; font-size:20px; max-width:1000px">
+    <div style="color:#52514e">Team name</div><div><span class="pending">PENDING: team name</span></div>
+    <div style="color:#52514e">Member</div><div><b>Mohammed Amaan Khan</b> <span class="pending">PENDING: add 2nd member if any</span></div>
+    <div style="color:#52514e">College</div><div>CMR Institute of Technology, Hyderabad (B.Tech CSE, final year)</div>
+    <div style="color:#52514e">Track</div><div>Product Engineering &amp; AI</div>
+    <div style="color:#52514e">Sub-track</div><div>C: Artificial Intelligence, problem 1 (statement parsing)</div>
+    <div style="color:#52514e">Code / PoC</div><div><span class="pending">PENDING: public GitHub link</span></div>
+  </div>
+  <div class="foot"><span>All data in this deck is synthetic. No real statement or account was used.</span><span>1</span></div>
+  <aside class="notes">Open with the one-line claim. Say what is pending (team name, app evidence, link). 20 seconds.</aside>
+</section>
+
+<!-- 2 PROBLEM / APP EVIDENCE -->
+<section class="slide">
+  <div class="kicker">The problem</div>
+  <h1>One silently wrong import is wrong everywhere it is used</h1>
+  <p class="sub">WealthNest shows family-level net worth and insights from statements and accounts a family brings in. The case brief says statements arrive as PDFs in dozens of layouts.</p>
+  <div class="cols">
+    <div class="col">
+      <h2>The question</h2>
+      <p>If a parser drops a row, flips a debit, or mixes a page footer into a balance, <b>who finds out, and when?</b></p>
+      <p>A statement is unusually well suited to checking itself: <span class="mono">opening + credits − debits = closing</span> and, usually, every row prints a running balance.</p>
+      <p>So: <b>measure the extraction against the statement's own arithmetic, stop what does not add up, and show a reviewer the exact row and why.</b></p>
+      <div class="card amber" style="margin-top:12px"><p style="margin:0; font-size:16.5px"><b>Not claimed:</b> how the live WealthNest importer behaves. The "baseline" later in this deck is our own reproduction of a straightforward parser.</p></div>
+    </div>
+    <div class="col">
+      <h2>What I saw in the live app <span class="pending">PENDING: audit not yet done</span></h2>
+      <div class="card" style="margin-bottom:10px"><span class="tag obs">OBSERVED</span> Observation 1: <span class="pending">screen / step · what I saw · consequence</span></div>
+      <div class="card" style="margin-bottom:10px"><span class="tag obs">OBSERVED</span> Observation 2: <span class="pending">screen / step · what I saw · consequence</span></div>
+      <div class="card"><span class="tag obs">OBSERVED</span> Observation 3: <span class="pending">screen / step · what I saw · consequence</span></div>
+      <p style="font-size:15px; color:#6a6962; margin-top:10px">Slots stay empty until filled from a real 30-minute walkthrough with synthetic files. Internal behaviour will be labelled as hypothesis.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Statement Guard · Product Engineering &amp; AI · Sub-track C</span><span>2</span></div>
+  <aside class="notes">Be explicit that observations are pending. When filled: lead with the strongest, quote visible text, say what a family would experience.</aside>
+</section>
+
+<!-- 3 SCOPE -->
+<section class="slide">
+  <div class="kicker">Scope: one problem, solved in depth</div>
+  <h1>Bank-statement transactions: because they can be checked</h1>
+  <p class="sub">Provisional choice, justified from the brief; to be revisited if the app audit points elsewhere.</p>
+  <div class="cols">
+    <div class="col">
+      <h2>Why this statement type</h2>
+      <ul>
+        <li style="font-size:20px">The brief names statement parsing and "catches its own extraction errors".</li>
+        <li>Bank statements carry <b>redundancy</b>: opening/closing balance and a running balance per row. Errors can be <i>measured</i> without human labels.</li>
+        <li>Mutual-fund / demat statements have far weaker built-in checks, so a self-check claim would rest on thin ice.</li>
+      </ul>
+      <h2 style="margin-top:14px">Extracted</h2>
+      <p>opening &amp; closing balance · per row: date, description, debit, credit, running balance · with exact <span class="mono">Decimal</span> money, and the page, box and source text kept for review.</p>
+    </div>
+    <div class="col">
+      <h2>Handled</h2>
+      <p style="font-size:17px">Indian digit grouping · wrapped narrations · repeated page headers/footers · debit/credit as columns, Dr/Cr suffix or indicator · blank repeated dates · carry-forward rows · watermarks · overdraft · OCR-damaged text layers · no-running-balance layouts</p>
+      <h2 style="margin-top:12px">Deliberately not handled</h2>
+      <div class="card red"><p style="font-size:17px; margin:0"><b>Image-only scans:</b> no OCR was built. They are routed to review as <span class="mono">UNSUPPORTED</span>, never guessed.</p></div>
+      <p style="font-size:16px; margin-top:10px">Also out: encrypted or &gt;15 MB / &gt;40-page files, multi-account PDFs, MF/demat statements, real bank layouts (all layouts here are invented).</p>
+    </div>
+  </div>
+  <div class="foot"><span>docs/SCOPE_DECISION.md</span><span>3</span></div>
+  <aside class="notes">Pre-empt: why not OCR? Reproducibility and honesty about the failure mode. Why not holdings? Nothing to reconcile against.</aside>
+</section>
+
+<!-- 4 ARCHITECTURE -->
+<section class="slide">
+  <div class="kicker">Solution</div>
+  <h1>Extract, normalize, validate, recover only on evidence, route</h1>
+  <img src="../../docs/img/architecture.png" style="width:1010px; margin:2px auto 0">
+  <div class="cols" style="margin-top:8px">
+    <div class="col"><p style="font-size:16.5px"><b>Deterministic geometry, no model.</b> Columns are learned from where the numbers sit, so header alignment does not matter, and unfamiliar header names fall back to structure instead of failing.</p></div>
+    <div class="col"><p style="font-size:16.5px"><b>Recovery is evidence-gated.</b> A repair must be confirmed by the printed balances on both sides, and is logged. A clean-text amount that disagrees is never overridden.</p></div>
+    <div class="col"><p style="font-size:16.5px"><b>Unresolved never means ready.</b> A reviewer edit re-runs the same checks; only a clean result unlocks import.</p></div>
+  </div>
+  <div class="foot"><span>docs/ARCHITECTURE.md</span><span>4</span></div>
+  <aside class="notes">Walk left to right in 40 seconds. Stress: status is one of four; nothing is imported unless READY / AUTOFIXED / REVIEWED.</aside>
+</section>
+
+<!-- 5 WORKED EXAMPLE -->
+<section class="slide">
+  <div class="kicker">One worked example (synthetic statement, 41 rows)</div>
+  <h1>The error is caught before import, and shown where it is</h1>
+  <div class="cols">
+    <div class="col" style="flex:1.45">
+      <img src="../../docs/img/worked_example.png" style="border:1px solid #e3e2dd; border-radius:8px; margin-top:16px">
+      <p style="font-size:16px; color:#6a6962; margin-top:8px">Crop of the source PDF; red box drawn by the review screen. Row 4: printed credit <b>76,036.78</b>, but the printed balance moved from 4,10,153.47 to 4,87,190.25, i.e. <b>77,036.78</b>.</p>
+    </div>
+    <div class="col" style="flex:1">
+      <div class="card red" style="margin-bottom:10px">
+        <div style="font-size:13px; font-weight:800; letter-spacing:1px; color:#c93a39">NEEDS REVIEW · NOT IMPORT-READY</div>
+        <p style="font-size:18px; margin:6px 0 0"><b>Row 4:</b> balance moved by 77,036.78 but this row accounts for 76,036.78 (unexplained 1,000.00).</p>
+        <p style="font-size:18px; margin:6px 0 0"><b>Whole statement:</b> opening + credits − debits ≠ closing (off by 1,000.00).</p>
+      </div>
+      <div class="card" style="margin-bottom:10px">
+        <p style="font-size:18px; margin:0"><b>Baseline parser:</b> status <span class="bad">READY</span>. Imports all 41 rows, nothing flagged.</p>
+      </div>
+      <div class="card green">
+        <p style="font-size:18px; margin:0"><b>Review flow:</b> the reviewer corrects the row from the source, <i>Re-validate</i> re-runs the same checks, status becomes <b>READY (human-reviewed)</b> and the edit is logged.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Reproduce: <span class="mono">python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf</span></span><span>5</span></div>
+  <aside class="notes">Demo order: sample 1 (clean, READY) → sample 2 (this one) → show red box → fix → READY (human-reviewed). Mention the defect is in the printed statement, so a smarter parser could not have recovered it; only a human can.</aside>
+</section>
+
+<!-- 6 CHECKS -->
+<section class="slide">
+  <div class="kicker">What the checks can and cannot see</div>
+  <h1>Arithmetic catches money errors; it is blind to text</h1>
+  <div class="cols">
+    <div class="col" style="flex:1.45">
+      <img src="../../docs/img/injection.png" style="width:100%">
+      <p style="font-size:14px; color:#6a6962">Errors injected directly into extracted records, 300 per cell, no PDFs: this isolates what the <i>checks</i> can see from what the parser gets wrong.</p>
+    </div>
+    <div class="col" style="flex:1">
+      <ul style="font-size:19px">
+        <li><b>Opening/closing only</b> catches any single amount, direction, dropped or duplicated row.</li>
+        <li><b>A running balance</b> additionally catches errors that cancel (<span class="bad">0%</span> → <span class="good">100%</span>) and <b>points at the row</b>.</li>
+        <li><b>Survives either way:</b> a wrong description, or a wrong date that stays in order. Neither is visible to arithmetic.</li>
+        <li><b>Page-footer text inside a description</b> is flagged by a separate rule, because it signals a structural misread.</li>
+      </ul>
+      <div class="card amber"><p style="font-size:17.5px; margin:0">Statements that print neither opening nor closing balance are <b>never</b> marked ready: the first row cannot be verified. This costs false alarms (next slides).</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>python -m bench.injection_eval</span><span>6</span></div>
+  <aside class="notes">Say the two 0% rows out loud before a judge does. That is the credibility move.</aside>
+</section>
+
+<!-- 7 BENCHMARK DESIGN -->
+<section class="slide">
+  <div class="kicker">Benchmark design</div>
+  <h1>Held-out layouts, independent ground truth, a lock</h1>
+  <div class="cols">
+    <div class="col" style="flex:1.1">
+      <table style="font-size:18px">
+        <tr><th>Design choice</th><th>What we did</th></tr>
+        <tr><td>Ground truth</td><td>Ledger built in exact <span class="mono">Decimal</span> by the generator, <b>before</b> rendering with a different library than the parser</td></tr>
+        <tr><td>Dev set</td><td>56 PDFs, 4 layouts (A–D), used to build the parser</td></tr>
+        <tr><td><b>Held-out set</b></td><td><b>100 PDFs, 3,931 rows</b>: 4 layouts never seen (E–H) + fresh seeds of 2 dev layouts</td></tr>
+        <tr><td>Categories</td><td>clean · watermark · blank dates · very wide amounts · overdraft · OCR-damaged text · source row missing / duplicated / amount altered · image-only</td></tr>
+        <tr><td>Lock</td><td>Fixture truth + pipeline source hashed in <span class="mono">bench/LOCK.json</span> <i>before</i> the holdout run; later changes are listed there</td></tr>
+      </table>
+    </div>
+    <div class="col" style="flex:0.9">
+      <h2>Three arms, same 100 PDFs</h2>
+      <div class="card" style="margin-bottom:10px; font-size:18.5px"><b>1 Baseline</b>: header lookup, money tokens → nearest numeric header, date starts a row. No checks.</div>
+      <div class="card" style="margin-bottom:10px; font-size:18.5px"><b>2 Baseline + validation</b>: isolates <i>error detection</i>.</div>
+      <div class="card blue" style="font-size:18.5px"><b>3 Full pipeline</b>: learned columns, furniture filtering, recovery, validation: adds <i>extraction</i> gains.</div>
+      <p style="font-size:17px; margin-top:12px; color:#52514e"><b>Problem document</b> = wrong extraction, <i>or</i> defective source, <i>or</i> unreadable. Metrics report denominators and Wilson 95% intervals.</p>
+    </div>
+  </div>
+  <div class="foot"><span>bench/generator.py · bench/make_fixtures.py · bench/lock.py</span><span>7</span></div>
+  <aside class="notes">Say how the baseline was weakened and then replaced (slide 9). Own it before they ask.</aside>
+</section>
+
+<!-- 8 RESULTS -->
+<section class="slide">
+  <div class="kicker">Results: held-out, n = 100 PDFs, 3,931 rows</div>
+  <h1>No wrong numbers imported; review load is half that of checks alone</h1>
+  <div class="cols">
+    <div class="col" style="flex:1.05">
+      <img src="../../docs/img/outcomes.png" style="width:100%">
+      <p style="font-size:13.5px; color:#6a6962">Outcome of each arm on the same 100 statements. "WRONG" = a financial field wrong, or a defective source imported.</p>
+    </div>
+    <div class="col" style="flex:1">
+      <table style="font-size:17.5px">
+        <tr><th></th><th class="n">Baseline</th><th class="n">Full (locked)</th></tr>
+        <tr><td>Fully correct</td><td class="n">32/100</td><td class="n"><b>87/100</b></td></tr>
+        <tr><td>Date / amount / balance exact</td><td class="n">69 / 52 / 85%</td><td class="n"><b>95 / 94 / 96%</b></td></tr>
+        <tr><td>Problem docs flagged</td><td class="n bad">0/77</td><td class="n good"><b>28/28</b> (CI 88–100)</td></tr>
+        <tr><td>Imported while wrong</td><td class="n bad">77</td><td class="n good"><b>0</b></td></tr>
+        <tr><td>Review rate</td><td class="n">0%</td><td class="n"><b>44%</b></td></tr>
+        <tr><td>Straight-through &amp; correct</td><td class="n">23</td><td class="n"><b>56</b></td></tr>
+        <tr><td>Median time per PDF</td><td class="n">23 ms</td><td class="n">36 ms</td></tr>
+      </table>
+      <p style="font-size:15px; margin-top:10px">Detection alone (arm 2) also catches 77/77, but sends <b>89%</b> of statements to a human. Extraction improvements are what make that affordable.</p>
+    </div>
+  </div>
+  <div class="cols" style="margin-top:14px">
+    <div class="card red col"><div class="big bad">77 → 0</div><div class="lbl">statements imported while wrong, per 100 (baseline → full, financial fields)</div></div>
+    <div class="card blue col"><div class="big" style="color:#1d5fb0">23 → 56</div><div class="lbl">statements imported straight through <i>and</i> correct, per 100</div></div>
+    <div class="card amber col"><div class="big" style="color:#8a5a00">89% → 44%</div><div class="lbl">review rate: checks on the baseline vs the full pipeline</div></div>
+  </div>
+  <div class="foot"><span>Generated by bench/report.py · results/RESULTS_TABLES.md</span><span>8</span></div>
+  <aside class="notes">Headline: 0 silent wrong imports out of 28 problem docs; the upper confidence bound is still 12%, so say "no misses observed", not "never".</aside>
+</section>
+
+<!-- 9 LIMITS -->
+<section class="slide">
+  <div class="kicker">Limitations: the honest part</div>
+  <h1>Where it is weak, and what the holdout taught us</h1>
+  <div class="cols">
+    <div class="col" style="flex:0.95">
+      <img src="../../docs/img/layouts.png" style="width:100%">
+      <p style="font-size:14px; color:#6a6962">Statements fully correct by layout (A, C seen in dev; E–H unseen). On layout F the locked pipeline was <b>worse</b> than the baseline (13 vs 14 of 20).</p>
+    </div>
+    <div class="col" style="flex:1.05">
+      <ul style="font-size:18.5px">
+        <li><b>Layout H = all 16 false alarms.</b> No opening/closing is printed, so nothing is "ready". Strict by design; precision falls to 64%.</li>
+        <li><b>Two real bugs found by the holdout</b>, fixed afterwards and reported separately: <b>93/100</b>, review 41%. That number is optimistic (tuned after seeing failures).</li>
+        <li><b>Recovery hid a bug:</b> 13 of 17 auto-corrections on the locked run were compensating for one parser bug.</li>
+        <li><b>Dev 95% → holdout 87%:</b> the cost of tuning on dev.</li>
+        <li><b>Baseline was replaced</b> after a first draft scored 9/100: that was a strawman. Disclosed in the lock file.</li>
+        <li><b>Seven invented layouts</b> are not real banks: real-world accuracy is unmeasured. No OCR. Wrong descriptions pass arithmetic.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>docs/RESULTS.md · bench/LOCK.json (post_lock_changes)</span><span>9</span></div>
+  <aside class="notes">Likely follow-up: "isn't 3b cheating?" Answer: yes it is tuned on the holdout, which is why headline = locked; 3b only shows the bugs were real.</aside>
+</section>
+
+<!-- 10 ROLLOUT -->
+<section class="slide">
+  <div class="kicker">Feasibility and impact</div>
+  <h1>A function call and a review screen, then a measured pilot</h1>
+  <div class="cols">
+    <div class="col">
+      <h2>Can a startup ship it?</h2>
+      <ul style="font-size:19px">
+        <li>Python + PyMuPDF, no GPU, no API keys, ~40 ms median per PDF.</li>
+        <li>Fits behind an upload endpoint: returns <span class="mono">status + statement + flags</span>.</li>
+        <li>Emits an AA-shaped record so downstream dedupe/net-worth code does not care where a row came from (public ReBIT deposit schema; field names are <i>our assumption</i>).</li>
+        <li>Run it in a sandboxed worker with timeouts: the prototype does not isolate untrusted PDFs.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Hypotheses <span class="tag hyp">HYPOTHESIS, not measured</span></h2>
+      <ul style="font-size:19px">
+        <li>Fewer wrong imports reach family net worth.</li>
+        <li>Fewer "my balance is wrong" tickets and re-imports.</li>
+        <li>More users reach a first linked account with verified balances.</li>
+      </ul>
+      <p style="font-size:16px; color:#6a6962">Benchmark review rates (41–44%) are on a deliberately hard synthetic mix; the real mix is unknown.</p>
+    </div>
+    <div class="col">
+      <h2>How to test it</h2>
+      <ol style="font-size:19px; padding-left:22px; margin:6px 0 0">
+        <li><b>Shadow mode</b> on already-consented uploads; log status and flags only.</li>
+        <li><b>Human audit</b> of a stratified sample gives the real silent-error and false-alarm rates.</li>
+        <li><b>Go/no-go set in advance</b> (e.g. silent errors among READY ≤ 0.5%).</li>
+        <li><b>A/B</b> on first-account completion.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="foot"><span>docs/PILOT_PLAN.md</span><span>10</span></div>
+  <aside class="notes">Be ready for: "what would you build next?" → OCR with the same validation gate; per-bank layout learning; sandboxing.</aside>
+</section>
+
+<!-- 11 REPRODUCE -->
+<section class="slide">
+  <div class="kicker">Reproduce and explore</div>
+  <h1>Everything is runnable without keys</h1>
+  <div class="cols">
+    <div class="col" style="flex:1.7">
+<pre style="font-size:13.5px; padding:14px 16px">pip install -r requirements.txt
+python -m pytest -q                       # 43 tests
+python -m bench.make_fixtures --check     # fixtures match the lock
+python -m bench.run_eval --split holdout  # all arms
+python -m bench.injection_eval            # validator-only benchmark
+python -m bench.report                    # tables from the run
+streamlit run app/streamlit_app.py        # demo and review flow
+python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf</pre>
+      <p style="margin-top:14px">Repository: <span class="pending">PENDING: public GitHub link</span> · Demo script and Q&amp;A prep are in <span class="mono">submission/</span>.</p>
+    </div>
+    <div class="col" style="flex:1">
+      <h2>What was and was not claimed</h2>
+      <ul style="font-size:16.5px">
+        <li><span class="tag proto">PROTOTYPE</span> every number here: synthetic fixtures only.</li>
+        <li><span class="tag obs">OBSERVED</span> live-app findings: <span class="pending">PENDING</span></li>
+        <li><span class="tag hyp">HYPOTHESIS</span> product impact; WealthNest internals.</li>
+        <li>No real statement, account or WealthNest data was used or uploaded.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Statement Guard · CMR Institute of Technology, Hyderabad</span><span>11</span></div>
+  <aside class="notes">Close on: the prototype's value is the stop-and-show-why behaviour, plus an honest benchmark.</aside>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+{
+ "layout": "A",
+ "category": "src_missing_row",
+ "seed": 9001,
+ "split": "dev",
+ "opening": "463073.78",
+ "closing": "1103311.01",
+ "has_balance": true,
+ "printed_rows": [
+  {
+   "date": "2025-05-07",
+   "description": "IMPS/P2A/804985498187/AMINA KHATUN",
+   "ref": "633724326688",
+   "debit": null,
+   "credit": "24556.15",
+   "balance": "487629.93"
+  },
+  {
+   "date": "2025-05-08",
+   "description": "UPI/CR/168030798406/K LAKSHMI DEVI/okpay/UPI",
+   "ref": "358445084604",
+   "debit": null,
+   "credit": "3517.36",
+   "balance": "491147.29"
+  },
+  {
+   "date": "2025-05-09",
+   "description": "UPI/DR/710812556384/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "241668622732",
+   "debit": "5789.21",
+   "credit": null,
+   "balance": "485358.08"
+  },
+  {
+   "date": "2025-05-09",
+   "description": "NEFT-N735320211-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "9535376738",
+   "debit": null,
+   "credit": "174369.43",
+   "balance": "659727.51"
+  },
+  {
+   "date": "2025-05-12",
+   "description": "UPI/DR/861840938319/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "648260706246",
+   "debit": "4160.98",
+   "credit": null,
+   "balance": "655566.53"
+  },
+  {
+   "date": "2025-05-12",
+   "description": "ACH D- NORTHSTAR INSURANCE-41128036",
+   "ref": "24295606",
+   "debit": "14672.66",
+   "credit": null,
+   "balance": "640893.87"
+  },
+  {
+   "date": "2025-05-14",
+   "description": "UPI/DR/547380752344/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "780171136144",
+   "debit": "476.92",
+   "credit": null,
+   "balance": "640416.95"
+  },
+  {
+   "date": "2025-05-14",
+   "description": "UPI/DR/076983889039/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "269300568646",
+   "debit": "4924.19",
+   "credit": null,
+   "balance": "635492.76"
+  },
+  {
+   "date": "2025-05-14",
+   "description": "NEFT-N666594486-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "1725564815",
+   "debit": "31669.29",
+   "credit": null,
+   "balance": "603823.47"
+  },
+  {
+   "date": "2025-05-15",
+   "description": "UPI/CR/119959119799/S VENKATESH/okpay/UPI",
+   "ref": "536343329701",
+   "debit": null,
+   "credit": "25959.38",
+   "balance": "629782.85"
+  },
+  {
+   "date": "2025-05-16",
+   "description": "IMPS/P2A/008887967007/AMINA KHATUN",
+   "ref": "583466543808",
+   "debit": null,
+   "credit": "39943.99",
+   "balance": "669726.84"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "UPI/DR/993355895776/SPICEROUTE FOODS/okpay/UPI PAYMENT REF",
+   "ref": "852771795162",
+   "debit": "2182.73",
+   "credit": null,
+   "balance": "667544.11"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "NEFT-N584924967-ACME PAYROLL SERVICES-RENT/EMI SETTLEMENT",
+   "ref": "4941342906",
+   "debit": "52098.66",
+   "credit": null,
+   "balance": "596913.69"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "NEFT-N692261603-ACME PAYROLL SERVICES-SALARY",
+   "ref": "6583753232",
+   "debit": null,
+   "credit": "211607.65",
+   "balance": "808521.34"
+  },
+  {
+   "date": "2025-05-19",
+   "description": "ACH D- ORCHARD HOUSING SOCIETY-45847593",
+   "ref": "70773199",
+   "debit": "18613.06",
+   "credit": null,
+   "balance": "789908.28"
+  },
+  {
+   "date": "2025-05-19",
+   "description": "UPI/DR/447709274095/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "464554244314",
+   "debit": "4351.50",
+   "credit": null,
+   "balance": "785556.78"
+  },
+  {
+   "date": "2025-05-20",
+   "description": "NEFT-N557440205-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "8176555454",
+   "debit": null,
+   "credit": "248549.13",
+   "balance": "1034105.91"
+  },
+  {
+   "date": "2025-05-23",
+   "description": "IMPS/P2A/623529597551/K LAKSHMI DEVI",
+   "ref": "393787696248",
+   "debit": null,
+   "credit": "33256.56",
+   "balance": "1067362.47"
+  },
+  {
+   "date": "2025-05-26",
+   "description": "IMPS/P2A/612906058756/S VENKATESH",
+   "ref": "538329493847",
+   "debit": null,
+   "credit": "35948.54",
+   "balance": "1103311.01"
+  }
+ ],
+ "original_rows": [
+  {
+   "date": "2025-05-07",
+   "description": "IMPS/P2A/804985498187/AMINA KHATUN",
+   "ref": "633724326688",
+   "debit": null,
+   "credit": "24556.15",
+   "balance": "487629.93"
+  },
+  {
+   "date": "2025-05-08",
+   "description": "UPI/CR/168030798406/K LAKSHMI DEVI/okpay/UPI",
+   "ref": "358445084604",
+   "debit": null,
+   "credit": "3517.36",
+   "balance": "491147.29"
+  },
+  {
+   "date": "2025-05-09",
+   "description": "UPI/DR/710812556384/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "241668622732",
+   "debit": "5789.21",
+   "credit": null,
+   "balance": "485358.08"
+  },
+  {
+   "date": "2025-05-09",
+   "description": "NEFT-N735320211-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "9535376738",
+   "debit": null,
+   "credit": "174369.43",
+   "balance": "659727.51"
+  },
+  {
+   "date": "2025-05-12",
+   "description": "UPI/DR/861840938319/CITYCAB/okpay/UPI PAYMENT REF",
+   "ref": "648260706246",
+   "debit": "4160.98",
+   "credit": null,
+   "balance": "655566.53"
+  },
+  {
+   "date": "2025-05-12",
+   "description": "ACH D- NORTHSTAR INSURANCE-41128036",
+   "ref": "24295606",
+   "debit": "14672.66",
+   "credit": null,
+   "balance": "640893.87"
+  },
+  {
+   "date": "2025-05-14",
+   "description": "UPI/DR/547380752344/URBANSTYLE/okpay/UPI PAYMENT REF",
+   "ref": "780171136144",
+   "debit": "476.92",
+   "credit": null,
+   "balance": "640416.95"
+  },
+  {
+   "date": "2025-05-14",
+   "description": "UPI/DR/076983889039/STREAMBOX/okpay/UPI PAYMENT REF",
+   "ref": "269300568646",
+   "debit": "4924.19",
+   "credit": null,
+   "balance": "635492.76"
+  },
+  {
+   "date": "2025-05-14",
+   "description": "NEFT-N666594486-NORTHSTAR INSURANCE-RENT/EMI SETTLEMENT",
+   "ref": "1725564815",
+   "debit": "31669.29",
+   "credit": null,
+   "balance": "603823.47"
+  },
+  {
+   "date": "2025-05-15",
+   "description": "UPI/CR/119959119799/S VENKATESH/okpay/UPI",
+   "ref": "536343329701",
+   "debit": null,
+   "credit": "25959.38",
+   "balance": "629782.85"
+  },
+  {
+   "date": "2025-05-16",
+   "description": "IMPS/P2A/008887967007/AMINA KHATUN",
+   "ref": "583466543808",
+   "debit": null,
+   "credit": "39943.99",
+   "balance": "669726.84"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "UPI/DR/993355895776/SPICEROUTE FOODS/okpay/UPI PAYMENT REF",
+   "ref": "852771795162",
+   "debit": "2182.73",
+   "credit": null,
+   "balance": "667544.11"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "IMPS/P2A/589387338565/JOSEPH D SOUZA",
+   "ref": "941723947606",
+   "debit": "18531.76",
+   "credit": null,
+   "balance": "649012.35"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "NEFT-N584924967-ACME PAYROLL SERVICES-RENT/EMI SETTLEMENT",
+   "ref": "4941342906",
+   "debit": "52098.66",
+   "credit": null,
+   "balance": "596913.69"
+  },
+  {
+   "date": "2025-05-18",
+   "description": "NEFT-N692261603-ACME PAYROLL SERVICES-SALARY",
+   "ref": "6583753232",
+   "debit": null,
+   "credit": "211607.65",
+   "balance": "808521.34"
+  },
+  {
+   "date": "2025-05-19",
+   "description": "ACH D- ORCHARD HOUSING SOCIETY-45847593",
+   "ref": "70773199",
+   "debit": "18613.06",
+   "credit": null,
+   "balance": "789908.28"
+  },
+  {
+   "date": "2025-05-19",
+   "description": "UPI/DR/447709274095/BOOKNEST/okpay/UPI PAYMENT REF",
+   "ref": "464554244314",
+   "debit": "4351.50",
+   "credit": null,
+   "balance": "785556.78"
+  },
+  {
+   "date": "2025-05-20",
+   "description": "NEFT-N557440205-BRIGHTPATH LABS PVT LTD-SALARY",
+   "ref": "8176555454",
+   "debit": null,
+   "credit": "248549.13",
+   "balance": "1034105.91"
+  },
+  {
+   "date": "2025-05-23",
+   "description": "IMPS/P2A/623529597551/K LAKSHMI DEVI",
+   "ref": "393787696248",
+   "debit": null,
+   "credit": "33256.56",
+   "balance": "1067362.47"
+  },
+  {
+   "date": "2025-05-26",
+   "description": "IMPS/P2A/612906058756/S VENKATESH",
+   "ref": "538329493847",
+   "debit": null,
+   "credit": "35948.54",
+   "balance": "1103311.01"
+  }
+ ],
+ "source_defect": {
+  "type": "missing_row",
+  "row": 12,
+  "removed": {
+   "date": "2025-05-18",
+   "description": "IMPS/P2A/589387338565/JOSEPH D SOUZA",
+   "ref": "941723947606",
+   "debit": "18531.76",
+   "credit": null,
+   "balance": "649012.35"
+  }
+ },
+ "image_only": false,
+ "expected_review": true,
+ "summary_style": "inline",
+ "summary_printed": true
+}
