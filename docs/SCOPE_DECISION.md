@@ -8,6 +8,12 @@ supplied yet (see `docs/audit/AUDIT_EVIDENCE.md`). The default scope below is ju
 and public facts only. If the live-app audit shows a stronger failure on another statement type (mutual-fund
 CAS, demat holdings), revisit this file *before* building more.
 
+> **Scope risk found on 2026-11-25 (public store listing, not an in-app check):** WealthNest's listing advertises PDF import for **CAS and PPF/NPS/Sukanya/post-office
+> scheme statements**, and *linking* for bank accounts. It never says bank-statement PDFs are accepted. The case brief itself lists "bank, mutual fund, demat" PDFs,
+> so bank statements remain a valid scope for the challenge, but the live-app audit (step B of `docs/audit/AUDIT_HANDOFF.md`) must show whether the app takes them.
+> If it does not, the deck keeps the bank-statement prototype as a *proposed* self-check and states that the same reconciliation idea would need per-type checks for CAS
+> (units × NAV style relationships) and scheme passbooks.
+
 ## Why bank statements (default)
 
 | Reason | Basis |

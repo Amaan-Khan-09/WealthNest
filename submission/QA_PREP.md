@@ -77,6 +77,15 @@ digit) is itself a signal.
 Out of scope: they lack the built-in redundancy to self-check. A CAS has per-folio unit/NAV/amount relationships that could carry a similar gate; that is the natural next step.
 
 **14. What did you see in the live app?** `PENDING: answer from your audit.` Do not answer from assumption: say "I observed X; I infer Y" and label which is which.
+The only thing verified so far is the *public store listing*, which says users can link accounts or import a CAS, and upload PDFs for PPF/NPS/Sukanya/post-office statements (password-protected ones work), and that
+"statement import shows clearer status messages". Say that this is the listing's claim, not something you tested.
+
+**14b. The app's PDF import seems to be about CAS and scheme statements. Why build for bank statements?**
+Because the case brief's AI sub-track names bank, mutual-fund and demat PDFs, and because bank statements are the type with the strongest built-in checks, which makes the self-check measurable. The approach (reconcile against the
+document's own arithmetic, route doubt to a reviewer with evidence) extends to CAS with different invariants. I would not claim WealthNest accepts bank-statement PDFs until my audit step B shows it.
+
+**14c. The app supports password-protected PDFs and yours doesn't.**
+Correct, a known gap: encrypted files return `UNSUPPORTED`. A password prompt in the review UI is a small next step; I kept the prototype to files it can read without credentials.
 
 **15. What would you do first at WealthNest?**
 Shadow-mode the guard on consented uploads for two weeks, human-audit a stratified sample, and decide on thresholds before looking at results.

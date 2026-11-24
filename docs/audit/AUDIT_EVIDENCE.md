@@ -1,6 +1,8 @@
 # App audit evidence: PENDING (needs Mohammed Amaan Khan)
 
-> **Attempt log.** 2026-11-25: audit requested; **not performed**. Blockers: the assistant had no browser/device/computer-use tool, and no verified
+> **Attempt log.** 2026-11-25 (attempt 2): official link `wealthnest.sng.link/D7wl6/n0lh6` resolved and verified (Play: com.wealthnest.app; App Store: id6757753223; publisher Tatvartha WealthNest AI Pvt Ltd, SEBI INA000022464). Still **no in-app observations**: the assistant cannot operate a mobile app. Public store-listing text is recorded below as `[STORE LISTING]`, never as an observation.
+>
+> Attempt 1: audit requested; **not performed**. Blockers: the assistant had no browser/device/computer-use tool, and no verified
 > official app link was available (brief placeholder `{{App link}}`; web search found only a Product Hunt page for WealthNest.ai and unrelated
 > apps with similar names). **Zero observations verified.** See [`AUDIT_HANDOFF.md`](AUDIT_HANDOFF.md) for the exact run sheet and files.
 
@@ -8,6 +10,13 @@
 > not claim anything about the live app until these are filled with things you actually saw.
 > Label each: **[OBSERVED]** (you saw it), **[HYPOTHESIS]** (you infer how it works internally),
 > **[PROTOTYPE]** (measured by this repo on synthetic data).
+
+## [STORE LISTING] public claims to check in the app (not observations, not usable in the 100-word form)
+- "Link your accounts securely, or import your CAS." (App Store, get started in 3 steps)
+- v3.0.2, 17 Nov: "Import your PPF, NPS, Sukanya, Senior Citizen and post office scheme statements. Just upload the PDF; password-protected ones work too."
+- v2.0.38, 18 Oct: "Statement import shows clearer status messages."; v2.0.35: "Statement import fixes, plus clearer import status messages."
+- v2.0.26, 1 Sept: CAS import lets you "pick exactly which asset types to bring in."
+- Inference (hypothesis): PDF import targets CAS and scheme statements; bank accounts are *linked*. Whether a bank-statement PDF is accepted is **unverified**: see step B in `AUDIT_HANDOFF.md`.
 
 ## Audit metadata (fill in)
 - Date of audit: `PENDING`

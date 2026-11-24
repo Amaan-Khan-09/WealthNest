@@ -187,3 +187,12 @@ def test_audit_short_statement_fixture_is_a_known_answer():
     assert st.status == Status.READY and len(st.txns) == 3
     assert st.opening == Decimal("10000.00") and st.closing == Decimal("12500.00")
     assert not process(short_statement(), mode="full").importable or len(process(short_statement(), mode="full").txns) == 3
+
+
+def test_audit_password_protected_fixture_is_unsupported_not_guessed():
+    from bench.make_audit_fixtures import PROTECTED_PASSWORD, protected_statement, short_statement
+    blob = protected_statement()
+    assert process(blob, mode="full_fixed").status == Status.UNSUPPORTED
+    d = pymupdf.open(stream=blob, filetype="pdf")
+    assert d.needs_pass and d.authenticate(PROTECTED_PASSWORD)          # the published password really opens it
+    assert len(short_statement()) > 0

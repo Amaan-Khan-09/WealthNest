@@ -13,7 +13,7 @@ Note: the deck PDF in the repo (`submission/TeamName_Tech.pdf`) is the draft wit
 
 ## "Top 3 observations from using the app" (max 100 words)
 **PENDING: 0 of 3 observations verified.** The live-app audit has not been performed (see `docs/audit/AUDIT_HANDOFF.md` for the exact run sheet and the blocker).
-Every slot stays empty until you have used the app yourself. The form says not to skip it, and these must be things you
+Every slot stays empty until you have used the app yourself. **Do not use the public store-listing text as an observation**: the form asks for what you saw while using the app. The form says not to skip it, and these must be things you
 actually saw. A fill-in template that fits the limit:
 
 ```

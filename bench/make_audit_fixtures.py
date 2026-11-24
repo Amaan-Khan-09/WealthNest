@@ -2,7 +2,7 @@
 
     python -m bench.make_audit_fixtures      # writes fixtures/audit/
 
-Files: a SHORT 3-row statement (the 'ordinary edge case': few transactions per column). The clean, defective
+Files: a SHORT 3-row statement (the 'ordinary edge case': few transactions per column) and the same file password-protected. The clean, defective
 and image-only files for the audit already live in fixtures/samples/ (1, 2 and 5).
 """
 from __future__ import annotations
@@ -49,7 +49,18 @@ def short_statement() -> bytes:
     return doc.tobytes()
 
 
+PROTECTED_PASSWORD = "synthetic1"      # not a secret: this file is synthetic and published
+
+
+def protected_statement() -> bytes:
+    """The same short statement, AES-256 password protected (password: synthetic1)."""
+    doc = pymupdf.open(stream=short_statement(), filetype="pdf")
+    return doc.tobytes(encryption=pymupdf.PDF_ENCRYPT_AES_256, user_pw=PROTECTED_PASSWORD, owner_pw="owner-synthetic")
+
+
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "short_statement_synthetic.pdf").write_bytes(short_statement())
-    print("wrote", OUT / "short_statement_synthetic.pdf")
+    (OUT / "short_statement_password_protected.pdf").write_bytes(protected_statement())
+    print("wrote", OUT / "short_statement_synthetic.pdf", "and", OUT / "short_statement_password_protected.pdf",
+          f"(password: {PROTECTED_PASSWORD})")

@@ -81,7 +81,8 @@
       <div class="card" style="margin-bottom:10px"><span class="tag obs">OBSERVED</span> Observation 1: <span class="pending">screen / step · what I saw · consequence</span></div>
       <div class="card" style="margin-bottom:10px"><span class="tag obs">OBSERVED</span> Observation 2: <span class="pending">screen / step · what I saw · consequence</span></div>
       <div class="card"><span class="tag obs">OBSERVED</span> Observation 3: <span class="pending">screen / step · what I saw · consequence</span></div>
-      <p style="font-size:15px; color:#6a6962; margin-top:10px">Slots stay empty until filled from a real 30-minute walkthrough with synthetic files. Nothing in this deck claims how the live app behaves. Internal behaviour will be labelled as hypothesis.</p>
+      <div class="card blue" style="margin-top:10px; padding:10px 14px"><p style="font-size:14.5px; margin:0"><span class="tag proto">STORE LISTING</span> Public App Store text, <b>not</b> an in-app observation: "Link your accounts securely, <b>or import your CAS</b>"; "upload the PDF [PPF, NPS, Sukanya, post-office statements]; password-protected ones work too"; "Statement import shows clearer status messages."</p></div>
+      <p style="font-size:15px; color:#6a6962; margin-top:8px">Slots stay empty until filled from a real 30-minute walkthrough with synthetic files. Nothing in this deck claims how the live app behaves. Internal behaviour will be labelled as hypothesis.</p>
     </div>
   </div>
   <div class="foot"><span>Statement Guard · Product Engineering &amp; AI · Sub-track C</span><span>2</span></div>
@@ -308,7 +309,7 @@
   <div class="cols">
     <div class="col" style="flex:1.7">
 <pre style="font-size:13.5px; padding:14px 16px">pip install -r requirements.txt
-python -m pytest -q                       # 62 tests
+python -m pytest -q                       # 63 tests
 python -m bench.make_fixtures --check     # fixtures match the lock
 python -m bench.run_eval --split holdout  # all arms
 python -m bench.injection_eval            # validator-only benchmark
