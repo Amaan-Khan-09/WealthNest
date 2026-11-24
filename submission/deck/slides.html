@@ -39,6 +39,7 @@
   .tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 2px 9px; border-radius: 999px; margin-right: 6px; }
   .tag.obs { background: #e6f3ec; color: #1b7a57; } .tag.hyp { background: #eef3fb; color: #1d5fb0; } .tag.proto { background: #f1f0ec; color: #52514e; }
   aside.notes { display: none; }
+  a { color: #1d5fb0; text-decoration: underline; }
   .draft { position: absolute; top: 18px; right: 28px; font-size: 12px; font-weight: 700; letter-spacing: 1.4px; color: #c98500; }
 </style>
 </head>
@@ -56,7 +57,7 @@
     <div style="color:#52514e">College</div><div>CMR Institute of Technology, Hyderabad (B.Tech CSE, final year)</div>
     <div style="color:#52514e">Track</div><div>Product Engineering &amp; AI</div>
     <div style="color:#52514e">Sub-track</div><div>C: Artificial Intelligence, problem 1 (statement parsing)</div>
-    <div style="color:#52514e">Code / PoC</div><div><span class="pending">PENDING: public GitHub link</span></div>
+    <div style="color:#52514e">Code / PoC</div><div><a href="https://github.com/Amaan-Khan-09/WealthNest">github.com/Amaan-Khan-09/WealthNest</a> (public)</div>
   </div>
   <div class="foot"><span>All data in this deck is synthetic. No real statement or account was used.</span><span>1</span></div>
   <aside class="notes">Open with the one-line claim. Say what is pending (team name, app evidence, link). 20 seconds.</aside>
@@ -80,7 +81,7 @@
       <div class="card" style="margin-bottom:10px"><span class="tag obs">OBSERVED</span> Observation 1: <span class="pending">screen / step · what I saw · consequence</span></div>
       <div class="card" style="margin-bottom:10px"><span class="tag obs">OBSERVED</span> Observation 2: <span class="pending">screen / step · what I saw · consequence</span></div>
       <div class="card"><span class="tag obs">OBSERVED</span> Observation 3: <span class="pending">screen / step · what I saw · consequence</span></div>
-      <p style="font-size:15px; color:#6a6962; margin-top:10px">Slots stay empty until filled from a real 30-minute walkthrough with synthetic files. Internal behaviour will be labelled as hypothesis.</p>
+      <p style="font-size:15px; color:#6a6962; margin-top:10px">Slots stay empty until filled from a real 30-minute walkthrough with synthetic files. Nothing in this deck claims how the live app behaves. Internal behaviour will be labelled as hypothesis.</p>
     </div>
   </div>
   <div class="foot"><span>Statement Guard · Product Engineering &amp; AI · Sub-track C</span><span>2</span></div>
@@ -131,7 +132,7 @@
 
 <!-- 5 WORKED EXAMPLE -->
 <section class="slide">
-  <div class="kicker">One worked example (synthetic statement, 41 rows)</div>
+  <div class="kicker">Proposed improvement · worked example on a synthetic statement (41 rows)</div>
   <h1>The error is caught before import, and shown where it is</h1>
   <div class="cols">
     <div class="col" style="flex:1.45">
@@ -152,7 +153,7 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Reproduce: <span class="mono">python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf</span></span><span>5</span></div>
+  <div class="foot"><span>Synthetic scenario; not an observation of the live app. Reproduce: <span class="mono">python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf</span></span><span>5</span></div>
   <aside class="notes">Demo order: sample 1 (clean, READY) → sample 2 (this one) → show red box → fix → READY (human-reviewed). Mention the defect is in the printed statement, so a smarter parser could not have recovered it; only a human can.</aside>
 </section>
 
@@ -208,7 +209,7 @@
 
 <!-- 8 RESULTS -->
 <section class="slide">
-  <div class="kicker">Results: held-out, n = 100 PDFs, 3,931 rows</div>
+  <div class="kicker">Prototype results (synthetic): held-out, n = 100 PDFs, 3,931 rows</div>
   <h1>No wrong numbers imported; review load is half that of checks alone</h1>
   <div class="cols">
     <div class="col" style="flex:1.05">
@@ -258,7 +259,8 @@
       </ul>
     </div>
   </div>
-  <div class="foot"><span>docs/RESULTS.md · bench/LOCK.json (post_lock_changes)</span><span>9</span></div>
+  <div class="card green" style="margin-top:10px"><p style="font-size:16.5px; margin:0"><b>After an end-to-end code review</b> (fail-safe on corrupt PDFs, CSV-injection guard, two <span class="mono">full_fixed</span> parser fixes) the benchmark was re-run: <b>0 differences across 780 case-and-arm results</b>. The two parser fixes are covered by unit tests because the locked benchmark contains no such cases.</p></div>
+  <div class="foot"><span>docs/RESULTS.md · docs/REVIEW_NOTES.md · bench/LOCK.json (post_lock_changes)</span><span>9</span></div>
   <aside class="notes">Likely follow-up: "isn't 3b cheating?" Answer: yes it is tuned on the holdout, which is why headline = locked; 3b only shows the bugs were real.</aside>
 </section>
 
@@ -306,14 +308,14 @@
   <div class="cols">
     <div class="col" style="flex:1.7">
 <pre style="font-size:13.5px; padding:14px 16px">pip install -r requirements.txt
-python -m pytest -q                       # 61 tests
+python -m pytest -q                       # 62 tests
 python -m bench.make_fixtures --check     # fixtures match the lock
 python -m bench.run_eval --split holdout  # all arms
 python -m bench.injection_eval            # validator-only benchmark
 python -m bench.report                    # tables from the run
 streamlit run app/streamlit_app.py        # demo and review flow
 python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf</pre>
-      <p style="margin-top:14px">Repository: <span class="pending">PENDING: public GitHub link</span> · Demo script and Q&amp;A prep are in <span class="mono">submission/</span>.</p>
+      <p style="margin-top:14px">Repository: <a href="https://github.com/Amaan-Khan-09/WealthNest">github.com/Amaan-Khan-09/WealthNest</a> (public) · CI: GitHub Actions <b>passed</b> on commit <span class="mono">a36d0ca</span> (61 tests + fixture-lock check) · Demo script and Q&amp;A prep are in <span class="mono">submission/</span>.</p>
     </div>
     <div class="col" style="flex:1">
       <h2>What was and was not claimed</h2>

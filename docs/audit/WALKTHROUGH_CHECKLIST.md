@@ -8,7 +8,7 @@ cannot supply that: only you can, by using the app. Do this once, take notes, th
 - Use a **demo mode or synthetic statements only**. Never upload a real statement, never connect a real account.
   The brief itself says the demo-mode question is still "to confirm": check, or email info@wealthnest.ai.
 - Blur personal details in every screenshot. Do not paste real account numbers or balances anywhere.
-- You may use the synthetic PDFs in `fixtures/samples/` as the file to import. That gives a known-answer test.
+- You may use the synthetic PDFs in `fixtures/samples/` and `fixtures/audit/` as the file to import. That gives a known-answer test. The condensed run sheet is in [`AUDIT_HANDOFF.md`](AUDIT_HANDOFF.md).
 - Write what you **saw**, not what you assume happens internally. Anything about internals is a hypothesis.
 
 ## Part 1: before import (5 min)

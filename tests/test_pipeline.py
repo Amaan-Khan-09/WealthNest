@@ -178,3 +178,12 @@ def test_balance_break_flag_carries_the_amount_the_balances_imply():
     f = next(f for f in st.errors() if f.code == "balance_break")
     imp = f.evidence["balances_imply"]
     assert imp["direction"] in ("debit", "credit") and Decimal(imp["amount"]) > 0
+
+
+def test_audit_short_statement_fixture_is_a_known_answer():
+    """fixtures/audit/short_statement_synthetic.pdf is handed to the live-app audit; its result must stay known."""
+    from bench.make_audit_fixtures import short_statement
+    st = process(short_statement(), mode="full_fixed")
+    assert st.status == Status.READY and len(st.txns) == 3
+    assert st.opening == Decimal("10000.00") and st.closing == Decimal("12500.00")
+    assert not process(short_statement(), mode="full").importable or len(process(short_statement(), mode="full").txns) == 3

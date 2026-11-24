@@ -13,7 +13,7 @@ Tested on Python 3.14 / Windows 11.
 
 ```bash
 pip install -r requirements.txt
-python -m pytest -q                                   # 61 tests
+python -m pytest -q                                   # 62 tests
 python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf
 streamlit run app/streamlit_app.py                    # demo + review flow (http://localhost:8501)
 ```
@@ -44,7 +44,7 @@ full tables, the post-lock changes and the caveats before quoting any number.
 statement_guard/   money.py  models.py  extract.py  baseline.py  validate.py  recover.py  review.py  pipeline.py  export.py  cli.py
 bench/             generator.py  make_fixtures.py  metrics.py  run_eval.py  injection_eval.py  lock.py  report.py  charts.py  LOCK.json
 app/               streamlit_app.py            demo + review UI
-tests/             61 tests: money, validator (record-level error injection), PDF pipeline, robustness/fuzz, exports and CLI, reviewer fix, app smoke
+tests/             62 tests: money, validator (record-level error injection), PDF pipeline, robustness/fuzz, exports and CLI, reviewer fix, app smoke
 fixtures/          dev/ holdout/ (generated)  samples/ (5 demo PDFs)
 results/           eval_*.json  RESULTS_TABLES.md  per_case_*.csv  injection.json  summary.json
 docs/              SCOPE_DECISION  ARCHITECTURE  RESULTS  REVIEW_NOTES  PILOT_PLAN  audit/ (checklist + evidence template)  img/
@@ -63,12 +63,15 @@ submission/        deck/slides.html (editable)  TeamName_Tech.pdf  unstop_form_d
 
 Things only the team can supply. The package is **not ready to upload** until these are done:
 
-1. **Live-app audit evidence** (30% of the score): fill [`docs/audit/AUDIT_EVIDENCE.md`](docs/audit/AUDIT_EVIDENCE.md) using the
-   [30-minute checklist](docs/audit/WALKTHROUGH_CHECKLIST.md), with synthetic files only; then replace the PENDING cards on slide 2 and the form's 100-word observations.
+1. **Live-app audit evidence** (30% of the score): **not performed yet, 0 of 3 observations verified.** The 2026-11-25 attempt was blocked
+   (no browser/device tool available; the case brief's app link is an unfilled `{{App link}}` placeholder). Follow
+   [`docs/audit/AUDIT_HANDOFF.md`](docs/audit/AUDIT_HANDOFF.md) (exact run sheet and the synthetic files in `fixtures/samples/` and `fixtures/audit/`),
+   then fill [`docs/audit/AUDIT_EVIDENCE.md`](docs/audit/AUDIT_EVIDENCE.md), slide 2 and the form's 100-word observations.
 2. **Team name and any second member** (slide 1); rename `TeamName_Tech.pdf` accordingly.
-3. **Public GitHub link**: create/push the repo yourself, then put the URL in slides 1 and 11 and the Unstop link field. Nothing has been pushed or published.
-4. **Your individual contribution**: confirm it, then add it to the Q&A notes.
-5. Rebuild the deck (`python submission/deck/build_deck.py`) and re-check the PDF.
+3. **Your individual contribution**: confirm it, then add it to the Q&A notes.
+4. Rebuild the deck (`python submission/deck/build_deck.py`), re-check the PDF, upload on Unstop yourself.
+
+Done: public repo [github.com/Amaan-Khan-09/WealthNest](https://github.com/Amaan-Khan-09/WealthNest); GitHub Actions passed on `a36d0ca`.
 
 ## Known limitations
 

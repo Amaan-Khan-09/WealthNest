@@ -1,5 +1,16 @@
 # Demo script (about 4 minutes) and speaker notes
 
+**Framing (say this first).** "This is a *proposed improvement*, shown on synthetic statements. I am not claiming how the live WealthNest
+importer behaves." Once your audit observations exist, replace this with: "In the app I saw X; here is what a self-checking import would do instead."
+
+**Why sample 2 is the demo case (until you have audit evidence):** it is the cleanest picture of the failure that matters for a family importing
+someone else's statement, a *silently wrong number*, and it shows detection (row 4, 1,000.00 off), evidence (red box on the source page),
+and recovery (edit, re-validate) in one minute. If the audit shows the app rejects PDFs with a generic error, keep sample 2 but lead with
+"say which row"; if it shows no review step, lead with the review card. See the mapping table in `docs/audit/AUDIT_HANDOFF.md`.
+
+**Optional edge case (30 s):** `fixtures/audit/short_statement_synthetic.pdf` (3 rows). The default pipeline reads it as READY; the benchmark-locked
+`full` mode falls back to review (the short-statement fix is in `full_fixed`).
+
 **Setup:** `streamlit run app/streamlit_app.py` → open `http://localhost:8501`. Keep **Pipeline = full_fixed**. Sidebar buttons load
 the sample statements (all synthetic). Deep links: `?sample=1` … `?sample=5`.
 

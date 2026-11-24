@@ -5,11 +5,15 @@
 - Re-upload is allowed until 6 Dec 2026, 11:59 PM IST; only the last upload counts.
 
 ## Link field (GitHub / Figma / PoC)
-`PENDING: paste your public GitHub URL here after you create and push the repo.`
-Make it public or view-shared. The same link must also appear inside the deck (slides 1 and 11, both marked PENDING).
+`https://github.com/Amaan-Khan-09/WealthNest`
+
+Verified 2026-11-25: public (an anonymous request returns HTTP 200); the same URL is a clickable link on slides 1 and 11 of the deck.
+CI: GitHub Actions run passed on commit `a36d0ca` (https://github.com/Amaan-Khan-09/WealthNest/actions/runs/45508394480).
+Note: the deck PDF in the repo (`submission/TeamName_Tech.pdf`) is the draft with PENDING markers; upload the final one to Unstop.
 
 ## "Top 3 observations from using the app" (max 100 words)
-**PENDING: every slot stays empty until you have used the app.** The form says not to skip it, and these must be things you
+**PENDING: 0 of 3 observations verified.** The live-app audit has not been performed (see `docs/audit/AUDIT_HANDOFF.md` for the exact run sheet and the blocker).
+Every slot stays empty until you have used the app yourself. The form says not to skip it, and these must be things you
 actually saw. A fill-in template that fits the limit:
 
 ```

@@ -1,5 +1,9 @@
 # App audit evidence: PENDING (needs Mohammed Amaan Khan)
 
+> **Attempt log.** 2026-11-25: audit requested; **not performed**. Blockers: the assistant had no browser/device/computer-use tool, and no verified
+> official app link was available (brief placeholder `{{App link}}`; web search found only a Product Hunt page for WealthNest.ai and unrelated
+> apps with similar names). **Zero observations verified.** See [`AUDIT_HANDOFF.md`](AUDIT_HANDOFF.md) for the exact run sheet and files.
+
 > Nothing in this file is evidence yet. Every row below is an empty slot. The deck and the Unstop form must
 > not claim anything about the live app until these are filled with things you actually saw.
 > Label each: **[OBSERVED]** (you saw it), **[HYPOTHESIS]** (you infer how it works internally),
