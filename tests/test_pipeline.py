@@ -116,3 +116,65 @@ def test_exports_are_exact_decimal_strings():
     assert to_csv(st).splitlines()[0].startswith("row,page,date")
     aa = to_aa_like(st)
     assert aa["transactions"][0]["type"] in ("DEBIT", "CREDIT")
+
+
+# ----------------------------------------------------------------------------- narration that looks like a label
+def _mini_statement(narr_row2: str) -> bytes:
+    """Hand-built 3-row statement; row 2's narration is attacker/bank controlled."""
+    doc = pymupdf.open()
+    page = doc.new_page()
+    f = "helv"
+    cols = {"date": 40, "narr": 110, "debit": 380, "credit": 450, "bal": 540}
+
+    def right(x, y, txt):
+        page.insert_text((x - pymupdf.get_text_length(txt, fontname=f, fontsize=9), y), txt, fontname=f, fontsize=9)
+
+    y = 80
+    page.insert_text((40, 60), "Opening Balance: 10,000.00", fontname=f, fontsize=9)
+    for x, h in ((cols["date"], "Date"), (cols["narr"], "Narration")):
+        page.insert_text((x, y), h, fontname=f, fontsize=9)
+    right(cols["debit"], y, "Debit")
+    right(cols["credit"], y, "Credit")
+    right(cols["bal"], y, "Balance")
+    rows = [("01/02/2026", "SALARY CREDIT", None, "5,000.00", "15,000.00"),
+            ("02/02/2026", narr_row2, "2,000.00", None, "13,000.00"),
+            ("03/02/2026", "GROCERIES", "500.00", None, "12,500.00")]
+    for d, n, dr, cr, b in rows:
+        y += 14
+        page.insert_text((cols["date"], y), d, fontname=f, fontsize=9)
+        page.insert_text((cols["narr"], y), n, fontname=f, fontsize=9)
+        if dr:
+            right(cols["debit"], y, dr)
+        if cr:
+            right(cols["credit"], y, cr)
+        right(cols["bal"], y, b)
+    page.insert_text((40, y + 24), "Closing Balance: 12,500.00", fontname=f, fontsize=9)
+    return doc.tobytes()
+
+
+def test_transaction_with_label_like_narration_is_kept_by_the_fixed_pipeline():
+    pdf = _mini_statement("ACCOUNT CLOSING BALANCE TRANSFER")
+    ok = process(pdf, mode="full_fixed")
+    assert len(ok.txns) == 3 and ok.status == Status.READY, [f.message for f in ok.errors()]
+    assert ok.closing == Decimal("12500.00")
+
+
+def test_short_statement_with_one_or_two_entries_per_column_is_read_by_the_fixed_pipeline():
+    st = process(_mini_statement("TRANSFER OUT"), mode="full_fixed")
+    assert st.status == Status.READY and len(st.txns) == 3
+    assert [(t.debit, t.credit) for t in st.txns] == [(None, Decimal("5000.00")), (Decimal("2000.00"), None),
+                                                      (Decimal("500.00"), None)]
+
+
+def test_locked_pipeline_may_not_read_short_statements_but_never_imports_them_wrong():
+    for narr in ("TRANSFER OUT", "ACCOUNT CLOSING BALANCE TRANSFER"):
+        st = process(_mini_statement(narr), mode="full")
+        assert not st.importable or [(t.debit, t.credit) for t in st.txns] == [
+            (None, Decimal("5000.00")), (Decimal("2000.00"), None), (Decimal("500.00"), None)]
+
+
+def test_balance_break_flag_carries_the_amount_the_balances_imply():
+    fx, st = run("A", 1011, "src_amount_tamper")
+    f = next(f for f in st.errors() if f.code == "balance_break")
+    imp = f.evidence["balances_imply"]
+    assert imp["direction"] in ("debit", "credit") and Decimal(imp["amount"]) > 0

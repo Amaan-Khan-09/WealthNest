@@ -174,7 +174,6 @@ def _repair_tokens(s: Statement) -> None:
         lists = [_token_candidates(s, i, role, target) for role, target in pend]
         if any(not c for c in lists):
             continue
-        verifiable = _link(rows, i, s.opening) is not None or t.balance is None
         # balance may itself be pending: evaluate combos with every pending field set
         good = []
         for combo in itertools.product(*lists):

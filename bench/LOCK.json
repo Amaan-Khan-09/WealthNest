@@ -41,6 +41,17 @@
    ],
    "reason": "Baseline v1.1: v1 treated any lone 'D'/'C' word anywhere in the row as the Dr/Cr marker (a narration such as 'JOSEPH D SOUZA' flipped a credit to a debit). Found by debugging on DEV fixtures; now the marker is only read inside the indicator column. Baseline v1 had been run once on holdout (concurrently with this fix); the holdout baseline arms were re-run with v1.1.",
    "affects": "baseline and validated arms only"
+  },
+  {
+   "files": [
+    "statement_guard/extract.py (fixes=True only)",
+    "statement_guard/validate.py",
+    "statement_guard/pipeline.py",
+    "statement_guard/export.py",
+    "app/"
+   ],
+   "reason": "End-to-end review after the holdout: (1) fixes=True only: a transaction whose narration reads like 'closing balance ...' is no longer swallowed as a summary row; the summary finder skips dated lines; short statements (a column with 1-2 entries) keep their amount columns. (2) all modes: process() is fail-safe, any exception while reading/processing returns UNSUPPORTED (a fuzz run found an uncaught PyMuPDF 'malformed page tree' crash). (3) balance_break flags carry the amount the printed balances imply. (4) CSV export neutralises formula injection; zero amounts exported correctly. (5) dead variables removed.",
+   "affects": "Arm 3 (locked, fixes=False) and arms 0-2 re-run after these changes: 0 per-case differences across 780 case/arm results on dev+holdout. Arm 3b re-run: also 0 differences (the new edge cases are not present in the benchmark fixtures; covered by unit tests instead)."
   }
  ]
 }

@@ -20,7 +20,7 @@ def make(n=12, with_balance=True) -> Statement:
     d0 = date(2026, 1, 1)
     for i in range(n):
         if i % 3 == 0:
-            amt, deb, cred = D("2500.50") + i, None, D("2500.50") + i
+            deb, cred = None, D("2500.50") + i
             bal += cred
         else:
             deb, cred = D("1234.25") + i * 7, None

@@ -18,7 +18,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--csv", type=Path, help="write transactions as CSV here")
     ap.add_argument("--quiet", action="store_true")
     a = ap.parse_args(argv)
-    st = process(a.pdf.read_bytes(), mode=a.mode, name=a.pdf.name)
+    try:
+        data = a.pdf.read_bytes()
+    except OSError as e:
+        print(f"cannot read {a.pdf}: {e.strerror or e}", file=sys.stderr)
+        return 1
+    st = process(data, mode=a.mode, name=a.pdf.name)
     if a.json:
         a.json.write_text(to_json(st), encoding="utf-8")
     if a.csv:

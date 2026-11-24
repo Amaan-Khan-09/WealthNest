@@ -21,7 +21,7 @@ from pathlib import Path
 
 import pymupdf
 
-from .models import Status, Statement, Txn
+from .models import Statement, Txn
 from .money import Amount, parse_amount, parse_date
 
 MAX_BYTES = 15_000_000
@@ -232,7 +232,7 @@ def _norm(w: Word) -> str:
     return w.text.lower().strip(":")
 
 
-def find_summary(lines_by_page: list[list[Line]], robust: bool) -> dict[str, Decimal]:
+def find_summary(lines_by_page: list[list[Line]], robust: bool, skip_dated: bool = False) -> dict[str, Decimal]:
     """Opening/closing/total labels. Pass 1: value on the same line. Pass 2 (robust only): value printed
     under the label (summary boxes), skipping the table's own header row."""
     out: dict[str, Decimal] = {}
@@ -245,6 +245,8 @@ def find_summary(lines_by_page: list[list[Line]], robust: bool) -> dict[str, Dec
             for li, ln in enumerate(lines):
                 if pass_no == 2 and li == hdr_i:
                     continue
+                if skip_dated and _leading_date(ln.words, 1e9)[0] is not None:
+                    continue                     # a line that starts with a date is a transaction, not a summary
                 ws = ln.words
                 for key, aliases in _LABEL_ALIASES.items():
                     if key in out:
@@ -324,7 +326,6 @@ def extract_baseline(doc: pymupdf.Document, name: str = "") -> Statement:
             k = sum(w.xc > m for m in mids)
             return cols_sorted[k]
 
-        stop = False
         for ln in lines[start:]:
             low = ln.text.lower()
             cells: dict[str, list[Word]] = {}
@@ -341,10 +342,8 @@ def extract_baseline(doc: pymupdf.Document, name: str = "") -> Statement:
                 a = parse_amount(bal_txt)
                 if a:
                     summ["closing"] = balance_value(a)
-                stop = True
                 break
             if "closing balance" in low or "end of statement" in low:
-                stop = True
                 break
             d = parse_date(_join(cells.get("date", [])))
             if d is not None:
@@ -358,8 +357,6 @@ def extract_baseline(doc: pymupdf.Document, name: str = "") -> Statement:
             elif rows and narr:
                 rows[-1].description += " " + narr
                 rows[-1].source_text += " | " + ln.text
-        if stop and False:
-            break
     if cols is None:
         notes.append("no recognizable table header")
     return _stmt_from_rows(name, len(doc), rows, summ, "baseline", notes)
@@ -460,35 +457,46 @@ def extract_robust(doc: pymupdf.Document, name: str = "", fixes: bool = False) -
 
     # --- 2. numeric clusters from clean numeric tokens
     toks: list[Word] = []
+    toks_body: list[Word] = []          # same, minus opening/closing/carry-forward label lines
     for reg in regions:
         for ln in reg:
-            if FURNITURE.search(ln.text.lower()):
+            low_ln = ln.text.lower()
+            if FURNITURE.search(low_ln):
                 continue
+            is_label = bool(OPENING.search(low_ln) or CLOSING.search(low_ln) or FWD.search(low_ln))
             for w in ln.words:
                 a = parse_amount(w.text)
                 if a and _has_decimals(a) and a.grouping_ok:
                     toks.append(w)
-    cl_r, cl_l = _cluster(toks, "x1"), _cluster(toks, "x0")
-    min_n = 3
+                    if not is_label:
+                        toks_body.append(w)
 
-    def solid(cs):
-        return [c for c in cs if c.n >= min_n]
-    cr_, cl_ = solid(cl_r), solid(cl_l)
-    clusters = cr_ if (len(cr_) <= len(cl_) or not cl_) else cl_
+    def pick(tokens: list[Word], min_n: int) -> list[Cluster]:
+        cr_ = [c for c in _cluster(tokens, "x1") if c.n >= min_n]
+        cl_ = [c for c in _cluster(tokens, "x0") if c.n >= min_n]
+        return cr_ if (len(cr_) <= len(cl_) or not cl_) else cl_
+
+    clusters = pick(toks, 3)
+    if fixes and hdr_cells:
+        # short statements: a column with only 1-2 entries (e.g. two debits, one credit) is still a column
+        # when the header says it exists
+        n_roles = sum(1 for c in hdr_cells if c.role in NUMERIC_ROLES)
+        if len(clusters) < n_roles:
+            relaxed = pick(toks_body, 1)
+            if len(relaxed) == n_roles:
+                clusters = relaxed
     clusters = sorted(clusters, key=lambda c: c.pos)
     if not clusters:
         notes.append("no numeric columns found")
         return _stmt_from_rows(name, len(doc), [], find_summary(lines_by_page, True), "robust", notes)
 
     # --- 3. roles for clusters
-    n_lines = sum(len(r) for r in regions)
     role_note = _assign_roles(clusters, hdr_cells, regions, notes, fixes)
 
-    summ = find_summary(lines_by_page, robust=True)
+    summ = find_summary(lines_by_page, robust=True, skip_dated=fixes)
     rows: list[Txn] = []
     cur: Txn | None = None
     cur_last_y: float | None = None
-    pitch = None
     by_role = {c.role: c for c in clusters if c.role}
     first_num_x = min(c.x0 for c in clusters)
 
@@ -523,14 +531,15 @@ def extract_robust(doc: pymupdf.Document, name: str = "", fixes: bool = False) -
                     num_words[c.role] = w
                 else:
                     rest.append(w)
-            text_rest = " ".join(w.text for w in rest)
-            # label rows: opening / closing / carry-forward
-            if OPENING.search(low) and "balance" in num_words:
+            # label rows: opening / closing / carry-forward. With fixes=True a line that carries a debit/credit
+            # amount is a transaction even if its narration says "closing balance transfer"
+            label_row = not (fixes and any(r in num_words for r in ("debit", "credit", "amount")))
+            if label_row and OPENING.search(low) and "balance" in num_words:
                 a = parse_amount(num_words["balance"].text)
                 if a:
                     summ["opening"] = balance_value(a)
                 continue
-            if CLOSING.search(low) and "balance" in num_words:
+            if label_row and CLOSING.search(low) and "balance" in num_words:
                 a = parse_amount(num_words["balance"].text)
                 if a:
                     summ["closing"] = balance_value(a)
@@ -539,7 +548,7 @@ def extract_robust(doc: pymupdf.Document, name: str = "", fixes: bool = False) -
             if FWD.search(low) and set(num_words) <= {"balance"}:
                 cur = None
                 continue
-            if CLOSING.search(low) or "end of statement" in low:
+            if label_row and (CLOSING.search(low) or "end of statement" in low):
                 cur = None
                 continue
             d, vd, consumed = _leading_date(rest, first_num_x)

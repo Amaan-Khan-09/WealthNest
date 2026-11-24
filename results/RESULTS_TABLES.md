@@ -23,7 +23,7 @@ Documents: 100; ground-truth rows: 3931. Brackets are Wilson 95% intervals.
 | Straight-through and correct | 6/100 (6%) | 23/100 (23%) | 11/100 (11%) | 56/100 (56%) | 59/100 (59%) |
 | Auto-corrected docs: correct | – | – | – | 17/17 (100%) [82–100] | 7/7 (100%) [65–100] |
 | Row localisation (a flagged row within ±1 of the true culprit) | – | – | 54/54 (100%) [93–100] | 21/21 (100%) [85–100] | 17/17 (100%) [82–100] |
-| Median runtime per PDF (ms) | 6 | 6 | 7 | 11 | 10 |
+| Median runtime per PDF (ms) | 27 | 28 | 34 | 58 | 58 |
 
 ### holdout: by fixture category
 
@@ -80,7 +80,7 @@ Documents: 56; ground-truth rows: 2478. Brackets are Wilson 95% intervals.
 | Straight-through and correct | 8/56 (14%) | 17/56 (30%) | 5/56 (9%) | 44/56 (79%) | 44/56 (79%) |
 | Auto-corrected docs: correct | – | – | – | 7/7 (100%) [65–100] | 7/7 (100%) [65–100] |
 | Row localisation (a flagged row within ±1 of the true culprit) | – | – | 27/27 (100%) [88–100] | 9/9 (100%) [70–100] | 9/9 (100%) [70–100] |
-| Median runtime per PDF (ms) | 22 | 25 | 32 | 50 | 45 |
+| Median runtime per PDF (ms) | 33 | 34 | 46 | 64 | 66 |
 
 ### dev: by fixture category
 

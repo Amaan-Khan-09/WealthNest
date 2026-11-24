@@ -41,3 +41,23 @@ def test_reviewer_can_fix_the_mismatch_and_unlock_import():
     rows[bad]["debit" if delta < 0 else "credit"] = abs(delta)
     fixed = apply_table_edits(st0, rows)
     assert fixed.importable, [f.message for f in fixed.errors()]
+
+
+def test_switching_pipeline_reprocesses_the_same_file():
+    """The baseline (no checks) imports the defective sample; the guarded pipeline stops it."""
+    at = AppTest.from_file(APP, default_timeout=60).run()
+    at.sidebar.button[1].click().run()
+    assert "NEEDS REVIEW" in banner_text(at)
+    at.sidebar.selectbox[0].select("baseline").run()
+    assert not at.exception
+    assert "READY TO IMPORT" in banner_text(at)
+    at.sidebar.selectbox[0].select("full_fixed").run()
+    assert "NEEDS REVIEW" in banner_text(at)
+
+
+def test_deep_link_opens_a_sample_directly():
+    at = AppTest.from_file(APP, default_timeout=60)
+    at.query_params["sample"] = "3"
+    at.run()
+    assert not at.exception
+    assert "NEEDS REVIEW" in banner_text(at)

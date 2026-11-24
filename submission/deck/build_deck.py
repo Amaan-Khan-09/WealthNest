@@ -13,14 +13,24 @@ import pymupdf
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "TeamName_Tech.pdf"      # rename to <YourTeam>_Tech.pdf once the team name is final
-BROWSERS = [r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-            r"C:\Program Files\Google\Chrome\Application\chrome.exe"]
+BROWSERS = [
+    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+]
+PATH_NAMES = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "microsoft-edge", "chrome"]
+
+
+def find_browser() -> str | None:
+    found = next((b for b in BROWSERS if Path(b).exists()), None)
+    return found or next((p for p in map(shutil.which, PATH_NAMES) if p), None)
 
 
 def main() -> int:
-    exe = next((b for b in BROWSERS if Path(b).exists()), shutil.which("chromium") or shutil.which("google-chrome"))
+    exe = find_browser()
     if not exe:
-        print("No Chromium-based browser found")
+        print("No Chromium-based browser found (install Chrome, Edge or Chromium)")
         return 1
     cmd = [exe, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={OUT}",
            (HERE / "slides.html").as_uri()]

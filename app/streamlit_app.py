@@ -9,6 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from decimal import Decimal  # noqa: E402
+
 import pandas as pd  # noqa: E402
 import pymupdf  # noqa: E402
 import streamlit as st  # noqa: E402
@@ -38,6 +40,7 @@ def load(name: str, data: bytes) -> None:
     st.session_state.name = name
     st.session_state.stmt = process(data, mode=st.session_state.get("mode", "full_fixed"), name=name)
     st.session_state.original = st.session_state.stmt
+    st.session_state.rev = st.session_state.get("rev", 0) + 1
 
 
 def crop_png(pdf: bytes, page_no: int, bbox, prev_bbox=None) -> bytes:
@@ -141,7 +144,12 @@ with tab_fix:
                     why = "; ".join(f.message for f in stmt.errors() if f.row_idx == ri)
                     st.markdown(f"**Row {ri + 1}** · page {t.page} · extracted: "
                                 f"{t.date} · debit {t.debit} · credit {t.credit} · balance {t.balance}")
-                    st.markdown(f"_{why}_")
+                    st.text(why)                      # plain text: flag messages can echo PDF content
+                    for f in stmt.errors():
+                        imp = f.evidence.get("balances_imply") if f.row_idx == ri else None
+                        if imp and imp["amount"] != "0":
+                            st.info(f"Hint: the printed balances imply a {imp['direction']} of {Decimal(imp['amount']):,.2f} "
+                                    "on this row. Confirm against the source before editing.")
                     if t.bbox and pdf:
                         prev = stmt.txns[ri - 1].bbox if ri > 0 and stmt.txns[ri - 1].page == t.page else None
                         st.image(crop_png(pdf, t.page, t.bbox, prev), caption="Red box = the extracted row")
@@ -156,7 +164,7 @@ with tab_fix:
         for col in ("debit", "credit", "balance"):
             df[col] = df[col].map(lambda v: None if v is None else str(v))
         edited = st.data_editor(
-            df, num_rows="dynamic", hide_index=True, use_container_width=True, key=f"ed_{id(stmt)}",
+            df, num_rows="dynamic", hide_index=True, use_container_width=True, key=f"ed_{st.session_state.get('rev', 0)}",
             column_config={"_orig": None, "page": st.column_config.NumberColumn(disabled=True),
                            "date": st.column_config.DateColumn(format="YYYY-MM-DD"),
                            "debit": st.column_config.TextColumn(), "credit": st.column_config.TextColumn(),
@@ -168,16 +176,17 @@ with tab_fix:
             cl = st.text_input("Closing balance", value="" if stmt.closing is None else str(stmt.closing))
         if st.button("Re-validate", type="primary"):
             try:
-                from decimal import Decimal
                 new = apply_table_edits(stmt, edited.to_dict("records"),
                                         opening=Decimal(op.replace(",", "")) if op.strip() else None,
                                         closing=Decimal(cl.replace(",", "")) if cl.strip() else None)
                 st.session_state.stmt = new
+                st.session_state.rev = st.session_state.get("rev", 0) + 1
                 st.rerun()
             except (ValueError, ArithmeticError) as e:
                 st.error(f"Could not apply edits: {e}")
         if st.session_state.get("original") is not stmt and st.button("Reset to extracted result"):
             st.session_state.stmt = st.session_state.original
+            st.session_state.rev = st.session_state.get("rev", 0) + 1
             st.rerun()
 
 with tab_exp:

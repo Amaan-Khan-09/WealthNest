@@ -27,29 +27,43 @@ def _unsupported(name: str, reason: str, mode: str, pages: int = 0) -> Statement
 
 
 def process(src: bytes | str | Path, mode: str = "full_fixed", name: str = "") -> Statement:
+    """Never raises for bad input: anything that cannot be processed safely comes back as UNSUPPORTED
+    (routed to review), so a damaged or hostile PDF can neither crash the caller nor be imported."""
     if mode not in MODES:
         raise ValueError(f"mode must be one of {MODES}")
     t0 = time.perf_counter()
     name = name or (Path(src).name if isinstance(src, (str, Path)) else "upload.pdf")
+    st = _process(src, mode, name)
+    st.mode = mode
+    st.runtime_ms = (time.perf_counter() - t0) * 1000
+    return st
+
+
+def _process(src: bytes | str | Path, mode: str, name: str) -> Statement:
     try:
         doc = open_pdf(src)
     except UnsupportedPDF as e:
-        st = _unsupported(name, str(e), mode)
-        st.runtime_ms = (time.perf_counter() - t0) * 1000
-        return st
+        return _unsupported(name, str(e), mode)
+    except Exception as e:   # unreadable file / missing path / library error
+        return _unsupported(name, f"Cannot read this file ({type(e).__name__}); routed to review.", mode)
+    pages = 0
     try:
+        pages = len(doc)
         if mode not in ("naive", "baseline") and is_image_only(doc):
-            st = _unsupported(name, "Image-only PDF (no text layer). OCR is not implemented in this prototype, "
-                                    "so the statement is routed to review instead of guessing.", mode, len(doc))
-        elif mode in ("naive", "baseline"):
+            return _unsupported(name, "Image-only PDF (no text layer). OCR is not implemented in this prototype, "
+                                      "so the statement is routed to review instead of guessing.", mode, pages)
+        if mode in ("naive", "baseline"):
             st = (extract_naive if mode == "naive" else extract_baseline)(doc, name)
             st.status = Status.READY          # no validation: whatever was extracted is imported
         elif mode == "validated":
             st = validate(extract_baseline(doc, name))
         else:
             st = validate(recover(extract_robust(doc, name, fixes=(mode == "full_fixed"))))
+        return st
+    except UnsupportedPDF as e:
+        return _unsupported(name, str(e), mode, pages)
+    except Exception as e:   # damaged page tree, parser edge case, ... fail safe, never READY
+        return _unsupported(name, f"Could not process this file safely ({type(e).__name__}); "
+                                  "routed to review.", mode, pages)
     finally:
         doc.close()
-    st.mode = mode
-    st.runtime_ms = (time.perf_counter() - t0) * 1000
-    return st

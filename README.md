@@ -13,7 +13,7 @@ Tested on Python 3.14 / Windows 11.
 
 ```bash
 pip install -r requirements.txt
-python -m pytest -q                                   # 43 tests
+python -m pytest -q                                   # 61 tests
 python -m statement_guard.cli fixtures/samples/2_amount_mismatch_caught.pdf
 streamlit run app/streamlit_app.py                    # demo + review flow (http://localhost:8501)
 ```
@@ -44,10 +44,10 @@ full tables, the post-lock changes and the caveats before quoting any number.
 statement_guard/   money.py  models.py  extract.py  baseline.py  validate.py  recover.py  review.py  pipeline.py  export.py  cli.py
 bench/             generator.py  make_fixtures.py  metrics.py  run_eval.py  injection_eval.py  lock.py  report.py  charts.py  LOCK.json
 app/               streamlit_app.py            demo + review UI
-tests/             43 tests: money, validator (record-level error injection), PDF pipeline, reviewer fix, app smoke
+tests/             61 tests: money, validator (record-level error injection), PDF pipeline, robustness/fuzz, exports and CLI, reviewer fix, app smoke
 fixtures/          dev/ holdout/ (generated)  samples/ (5 demo PDFs)
 results/           eval_*.json  RESULTS_TABLES.md  per_case_*.csv  injection.json  summary.json
-docs/              SCOPE_DECISION  ARCHITECTURE  RESULTS  PILOT_PLAN  audit/ (checklist + evidence template)  img/
+docs/              SCOPE_DECISION  ARCHITECTURE  RESULTS  REVIEW_NOTES  PILOT_PLAN  audit/ (checklist + evidence template)  img/
 submission/        deck/slides.html (editable)  TeamName_Tech.pdf  unstop_form_draft.md  DEMO_SCRIPT.md  QA_PREP.md
 ```
 

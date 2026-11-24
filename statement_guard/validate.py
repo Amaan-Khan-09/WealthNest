@@ -95,7 +95,10 @@ def validate(stmt: Statement) -> Statement:
                     message=(f"Balance moved by {_fmt(delta)} but this row accounts for {_fmt(sg)} "
                              f"(unexplained {_fmt(resid)}). " + "; ".join(hyp) + "."),
                     evidence={"prev_balance": str(prev), "printed_balance": str(t.balance),
-                              "row_amount_signed": str(sg), "unexplained": str(resid), "source": t.source_text}))
+                              "row_amount_signed": str(sg), "unexplained": str(resid), "source": t.source_text,
+                              # what the printed balances say this row's amount should be (a hint, not a fix)
+                              "balances_imply": {"direction": "credit" if delta > 0 else "debit",
+                                                 "amount": str(abs(delta))}}))
         prev = t.balance
     last_bal = next((t.balance for t in reversed(rows) if t.balance is not None), None)
     if layout_has_balance and s.closing is not None and last_bal is not None and last_bal != s.closing:
